@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function ProjectsSection() {
 	return (
-		<section className="pt-20 pb-0 px-4">
+		<section className="pt-20 pb-20 px-4">
 			<div className="max-w-6xl mx-auto">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl mb-16 text-center md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400">
 					My Projects
@@ -23,9 +23,9 @@ export default function ProjectsSection() {
 								<div className="space-y-6">
 									<div>
 										<h3 className="text-2xl font-bold mb-4">SiteBotic - AI-Powered Chatbot Platform</h3>
-										<p className="text-sm text-purple-400 mb-2 italic">Founder & Technical Lead | SaaS Platform</p>
+										<p className="text-sm text-purple-400 mb-2 italic">Founder & Technical Lead | Production SaaS Platform</p>
 										<p className="text-gray-400">
-											A comprehensive SaaS platform enabling businesses to instantly create, customize, and embed intelligent chatbots trained on their website content. Built the complete backend infrastructure using modern web technologies, implementing AI-powered knowledge retrieval and seamless one-click deployment.
+											Production SaaS platform with automated data ingestion pipelines. Built end-to-end data infrastructure for AI-powered chatbots.
 										</p>
 										<div className="flex gap-4 mt-3">
 											<a href="https://sitebotic.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
@@ -37,35 +37,14 @@ export default function ProjectsSection() {
 										</div>
 									</div>
 
-										<div className="grid grid-cols-2 gap-6">
-											<div>
-												<h4 className="text-sm font-semibold text-purple-400 mb-3">Core Features</h4>
-												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• Website content crawling & AI training</li>
-													<li>• Customizable chatbot appearance & behavior</li>
-													<li>• One-click embed functionality</li>
-													<li>• Analytics dashboard & insights</li>
-													<li>• 24/7 automated customer support</li>
-												</ul>
-											</div>
-											<div>
-												<h4 className="text-sm font-semibold text-blue-400 mb-3">Technical Stack</h4>
-												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• React SPA for modern web development</li>
-													<li>• TypeScript for type-safe development</li>
-													<li>• TanStack Query for data fetching & caching</li>
-													<li>• Zustand for state management</li>
-													<li>• shadcn/ui for component library</li>
-												</ul>
-											</div>
-										</div>									<div className="space-y-3">
-										<h4 className="text-sm font-semibold text-teal-400">Key Achievements</h4>
+									<div className="space-y-3">
+										<h4 className="text-sm font-semibold text-teal-400">Tech Stack</h4>
 										<ul className="space-y-2 text-sm text-gray-400">
-											<li>• Built end-to-end SaaS platform from concept to production</li>
-											<li>• Implemented AI-powered content processing and chatbot training</li>
-											<li>• Created seamless no-code deployment experience</li>
-											<li>• Developed comprehensive analytics and user insights system</li>
-											<li>• Established scalable cloud infrastructure for growing user base</li>
+											<li>• RAG pipeline with vector search (pgvector + PostgreSQL)</li>
+											<li>• Async task processing with Dramatiq + Redis</li>
+											<li>• FastAPI backend with SQLAlchemy ORM</li>
+											<li>• React dashboard with TypeScript & TanStack Query</li>
+											<li>• Docker multi-environment deployment</li>
 										</ul>
 									</div>
 								</div>
@@ -173,45 +152,23 @@ export default function ProjectsSection() {
 											<h3 className="text-2xl font-bold mb-4">Customer 360 Risk Scoring System</h3>
 											<p className="text-sm text-purple-400 mb-2 italic">Data Engineering Project | University Assignment</p>
 											<p className="text-gray-400">
-												A comprehensive data engineering solution for building a Customer 360 view and implementing risk scoring analytics. Features ETL pipelines using SeaTunnel, distributed processing with Apache Spark, workflow orchestration via Apache Airflow, and interactive dashboards with Metabase for business intelligence.
+												End-to-end data engineering solution building Customer 360 views and risk analytics with ETL pipelines and distributed processing.
 											</p>
 											<a href="https://github.com/23210287thongtruong/customer360-risk" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">
 												View on GitHub →
 											</a>
 										</div>
 
-										<div className="grid grid-cols-2 gap-6">
+										<div className="space-y-4">
 											<div>
-												<h4 className="text-sm font-semibold text-purple-400 mb-3">Data Pipeline Technologies</h4>
+												<h4 className="text-sm font-semibold text-purple-400 mb-3">Tech Stack</h4>
 												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• Apache SeaTunnel for ETL operations</li>
-													<li>• Apache Spark for distributed processing</li>
+													<li>• ETL pipelines for data extraction & transformation</li>
+													<li>• Apache Spark (PySpark) for distributed analytics</li>
 													<li>• Apache Airflow for workflow orchestration</li>
-													<li>• PostgreSQL for data warehousing</li>
-													<li>• Python for data transformations</li>
+													<li>• PostgreSQL data warehouse with Metabase BI</li>
 												</ul>
 											</div>
-											<div>
-												<h4 className="text-sm font-semibold text-blue-400 mb-3">Analytics & Visualization</h4>
-												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• Metabase for business intelligence dashboards</li>
-													<li>• Risk scoring algorithms implementation</li>
-													<li>• Customer 360 view aggregation</li>
-													<li>• Real-time data processing pipelines</li>
-													<li>• Interactive data exploration tools</li>
-												</ul>
-											</div>
-										</div>
-
-										<div className="space-y-3">
-											<h4 className="text-sm font-semibold text-teal-400">Key Technical Achievements</h4>
-											<ul className="space-y-2 text-sm text-gray-400">
-												<li>• Designed and implemented scalable ETL pipelines handling large datasets</li>
-												<li>• Built distributed data processing workflows with Apache Spark</li>
-												<li>• Created automated data quality monitoring and validation systems</li>
-												<li>• Developed comprehensive risk scoring models for customer analytics</li>
-												<li>• Integrated multiple data sources into unified Customer 360 views</li>
-											</ul>
 										</div>
 									</div>
 
@@ -231,7 +188,7 @@ export default function ProjectsSection() {
 												<g>
 													<rect x="60" y="55" width="280" height="25" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
 													<text x="200" y="72" textAnchor="middle" className="fill-gray-400 text-[11px]">
-														SeaTunnel ETL Pipeline (Extract & Transform)
+														ETL Pipeline (Extract & Transform)
 													</text>
 													<line x1="200" y1="40" x2="200" y2="55" className="stroke-gray-600" strokeWidth="1" />
 													<line x1="200" y1="80" x2="200" y2="95" className="stroke-gray-600" strokeWidth="1" />
@@ -304,47 +261,24 @@ export default function ProjectsSection() {
 									<div className="space-y-6">
 										<div>
 											<h3 className="text-2xl font-bold mb-4">Book Recommendation System</h3>
-											<p className="text-sm text-purple-400 mb-2 italic">Full-Stack Web Application | University Assignment</p>
+											<p className="text-sm text-purple-400 mb-2 italic">Machine Learning Project | University Assignment</p>
 											<p className="text-gray-400">
-												A comprehensive book recommendation platform implementing multiple machine learning algorithms for personalized book suggestions. Features collaborative filtering using Singular Value Decomposition (SVD), content-based filtering with TF-IDF vectorization, and a hybrid approach combining both methods for improved accuracy.
+												Full-stack ML platform implementing collaborative filtering, content-based filtering, and hybrid recommendation algorithms.
 											</p>
 											<a href="https://github.com/23210287thongtruong/recommendation-system" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">
 												View on GitHub →
 											</a>
 										</div>
 
-										<div className="grid grid-cols-2 gap-6">
+										<div className="space-y-4">
 											<div>
-												<h4 className="text-sm font-semibold text-purple-400 mb-3">Backend (Python)</h4>
+												<h4 className="text-sm font-semibold text-purple-400 mb-3">Tech Stack</h4>
 												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• FastAPI for RESTful API development</li>
-													<li>• Scikit-learn for ML algorithms implementation</li>
-													<li>• Pandas & NumPy for data processing</li>
-													<li>• SVD for collaborative filtering</li>
-													<li>• TF-IDF for content-based recommendations</li>
+													<li>• Scikit-learn (SVD, TF-IDF) with FastAPI REST API</li>
+													<li>• React + TypeScript frontend with Vite</li>
+													<li>• Collaborative filtering and content-based algorithms</li>
 												</ul>
 											</div>
-											<div>
-												<h4 className="text-sm font-semibold text-blue-400 mb-3">Frontend (TypeScript)</h4>
-												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• React with TypeScript for type safety</li>
-													<li>• TanStack Router for client-side routing</li>
-													<li>• Vite for fast development and building</li>
-													<li>• Tailwind CSS for responsive styling</li>
-													<li>• Axios for API communication</li>
-												</ul>
-											</div>
-										</div>
-
-										<div className="space-y-3">
-											<h4 className="text-sm font-semibold text-teal-400">Key Features</h4>
-											<ul className="space-y-2 text-sm text-gray-400">
-												<li>• Multiple recommendation algorithms (collaborative, content-based, hybrid)</li>
-												<li>• User rating system and preference tracking</li>
-												<li>• Book search and filtering capabilities</li>
-												<li>• Responsive web interface with modern UI/UX</li>
-												<li>• RESTful API with comprehensive documentation</li>
-											</ul>
 										</div>
 									</div>
 
@@ -439,45 +373,22 @@ export default function ProjectsSection() {
 											<h3 className="text-2xl font-bold mb-4">Pet Clinic Management System</h3>
 											<p className="text-sm text-purple-400 mb-2 italic">Desktop Application | University Assignment</p>
 											<p className="text-gray-400">
-												A comprehensive veterinary clinic management system built with Java Swing, implementing complete CRUD operations for managing pets, owners, appointments, and medical records. Features a clean GUI interface with JDBC database connectivity and follows the DAO (Data Access Object) pattern for maintainable code architecture.
+												Java desktop application with complete CRUD operations for veterinary clinic management using DAO pattern and MySQL.
 											</p>
 											<a href="https://github.com/23210287thongtruong/pet-clinic-management-system" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">
 												View on GitHub →
 											</a>
 										</div>
 
-										<div className="grid grid-cols-2 gap-6">
+										<div className="space-y-4">
 											<div>
-												<h4 className="text-sm font-semibold text-purple-400 mb-3">Core Technologies</h4>
+												<h4 className="text-sm font-semibold text-purple-400 mb-3">Tech Stack</h4>
 												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• Java Swing for desktop GUI development</li>
-													<li>• JDBC for database connectivity</li>
+													<li>• Java with DAO pattern and JDBC</li>
+													<li>• Java Swing GUI with event-driven programming</li>
 													<li>• MySQL database for data persistence</li>
-													<li>• DAO pattern for data access layer</li>
-													<li>• Object-Oriented Programming principles</li>
 												</ul>
 											</div>
-											<div>
-												<h4 className="text-sm font-semibold text-blue-400 mb-3">Application Features</h4>
-												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• Pet and owner information management</li>
-													<li>• Appointment scheduling system</li>
-													<li>• Medical records and treatment history</li>
-													<li>• Search and filter functionality</li>
-													<li>• Data validation and error handling</li>
-												</ul>
-											</div>
-										</div>
-
-										<div className="space-y-3">
-											<h4 className="text-sm font-semibold text-teal-400">Technical Implementation</h4>
-											<ul className="space-y-2 text-sm text-gray-400">
-												<li>• Implemented DAO pattern for clean separation of concerns</li>
-												<li>• Built responsive Swing GUI with event-driven programming</li>
-												<li>• Established JDBC connections with prepared statements for security</li>
-												<li>• Created modular architecture with reusable components</li>
-												<li>• Applied proper error handling and user feedback mechanisms</li>
-											</ul>
 										</div>
 									</div>
 
@@ -578,47 +489,24 @@ export default function ProjectsSection() {
 									<div className="space-y-6">
 										<div>
 											<h3 className="text-2xl font-bold mb-4">Real-Time Price Tracker (BGU118)</h3>
-											<p className="text-sm text-purple-400 mb-2 italic">Full-Stack Web Application | University Assignment</p>
+											<p className="text-sm text-purple-400 mb-2 italic">Data Pipeline Project | University Assignment</p>
 											<p className="text-gray-400">
-												A comprehensive financial data visualization platform tracking real-time prices for Bitcoin, gold, and USD-VND exchange rates. Features external API integration, interactive charts with date range filtering, and dual currency display (USD/VND). Built with modern web technologies and deployed with containerization.
+												Real-time data ingestion platform tracking Bitcoin, gold, and USD-VND rates with automated ETL pipeline and interactive visualizations.
 											</p>
 											<a href="https://github.com/23210287thongtruong/bgu118" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">
 												View on GitHub →
 											</a>
 										</div>
 
-										<div className="grid grid-cols-2 gap-6">
+										<div className="space-y-4">
 											<div>
-												<h4 className="text-sm font-semibold text-purple-400 mb-3">Backend (Python)</h4>
+												<h4 className="text-sm font-semibold text-purple-400 mb-3">Tech Stack</h4>
 												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• FastAPI for high-performance API development</li>
-													<li>• SQLModel with SQLite for data persistence</li>
-													<li>• External API integrations (GoldAPI, CoinMarketCap)</li>
-													<li>• Asynchronous HTTP requests with httpx</li>
-													<li>• Automated data fetching and storage</li>
+													<li>• Async httpx for concurrent API calls</li>
+													<li>• SQLite with SQLModel ORM for time-series data</li>
+													<li>• React + Chart.js with date range filtering</li>
 												</ul>
 											</div>
-											<div>
-												<h4 className="text-sm font-semibold text-blue-400 mb-3">Frontend (TypeScript)</h4>
-												<ul className="space-y-2 text-sm text-gray-400">
-													<li>• React with TypeScript for robust development</li>
-													<li>• TanStack Query for efficient data fetching</li>
-													<li>• Chart.js for interactive data visualization</li>
-													<li>• React DatePicker for date range selection</li>
-													<li>• Responsive design with Tailwind CSS</li>
-												</ul>
-											</div>
-										</div>
-
-										<div className="space-y-3">
-											<h4 className="text-sm font-semibold text-teal-400">Key Features</h4>
-											<ul className="space-y-2 text-sm text-gray-400">
-												<li>• Real-time price tracking for Bitcoin, Gold, and USD-VND rates</li>
-												<li>• Interactive line charts with customizable date ranges</li>
-												<li>• Dual currency display with automatic VND conversion</li>
-												<li>• Automated data refresh with rate limiting</li>
-												<li>• Modern responsive UI with loading states and error handling</li>
-											</ul>
 										</div>
 									</div>
 
