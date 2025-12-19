@@ -14,26 +14,26 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbysR3mG_vVJJ1OnBWHqDA36KuOl4JH_ou36kPwaUEVGLN0bk4989NNZpf6P7ercDpUH/exec', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      if (response.ok) {
-        alert('Message sent successfully!');
-        setFormData({ name: '', email: '', sector: 'Python Development', message: '' });
-      } else {
-        alert('Failed to send message. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('An error occurred. Please try again later.');
-    }
+
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`Portfolio Contact: ${formData.name} - ${formData.sector}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Sector: ${formData.sector}\n\n` +
+      `Message:\n${formData.message}`
+    );
+
+    const mailtoLink = `mailto:contact@thongtruong.com?subject=${subject}&body=${body}`;
+
+    // Open email client
+    window.location.href = mailtoLink;
+
+    // Reset form
+    setFormData({ name: '', email: '', sector: 'Python Development', message: '' });
+
+    // Show success message
+    alert('Email client opened with your message! Please send it to complete submission.');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
