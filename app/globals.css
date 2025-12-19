@@ -2,6 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	background-color: #000;
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .tech-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  }
+  
+  .dark .tech-grid {
+    background-image: linear-gradient(to right, rgba(59, 130, 246, 0.08) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+  }
+
+  .corner-bracket {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-color: #3B82F6;
+    transition: all 0.3s ease;
+  }
+
+  .corner-bracket-tl { 
+    top: -1px; 
+    left: -1px; 
+    border-top-width: 2px; 
+    border-left-width: 2px; 
+  }
+
+  .corner-bracket-tr { 
+    top: -1px; 
+    right: -1px; 
+    border-top-width: 2px; 
+    border-right-width: 2px; 
+  }
+
+  .corner-bracket-bl { 
+    bottom: -1px; 
+    left: -1px; 
+    border-bottom-width: 2px; 
+    border-left-width: 2px; 
+  }
+
+  .corner-bracket-br { 
+    bottom: -1px; 
+    right: -1px; 
+    border-bottom-width: 2px; 
+    border-right-width: 2px; 
+  }
+
+  .scanlines {
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(59, 130, 246, 0.02) 50%,
+      transparent 100%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+  }
+
+  .code-typing::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+}
+
+/* Selection styling */
+::selection {
+  @apply bg-primary text-white;
 }

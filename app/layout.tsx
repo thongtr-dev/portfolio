@@ -1,57 +1,55 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-space-grotesk',
   subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: '--font-jetbrains-mono',
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - AI & Data Platform Engineer',
+  title: 'Thong Truong - Fullstack Python Developer',
   description:
-    'AI & Data Platform Engineer specializing in FastAPI, distributed task systems, and modern data pipelines. Experienced in designing scalable backend architectures using PostgreSQL, Redis, Celery/Dramatiq, Docker, and vector databases. Technical co-founder building production-ready AI-powered SaaS platforms.',
+    'Fullstack Python Developer architecting robust, scalable web ecosystems using Django and FastAPI. Transforming complex logic into elegant, high-performance user experiences.',
   keywords: [
-    'AI Engineer',
-    'Data Engineer',
-    'AI & Data Platform Engineer',
+    'Fullstack Developer',
+    'Python Developer',
+    'Django Developer',
     'FastAPI Developer',
-    'Python Backend Engineer',
-    'Distributed Systems',
-    'Event-Driven Architecture',
-    'Celery',
-    'Dramatiq',
-    'Redis',
-    'RabbitMQ',
+    'Backend Engineer',
+    'Frontend Engineer',
+    'Web Development',
+    'React Developer',
     'PostgreSQL',
-    'SQLAlchemy',
     'Docker',
-    'Async Python',
-    'LLM Integration',
-    'Vector Databases',
-    'pgvector',
-    'RAG Systems',
-    'Data Pipelines',
-    'Apache Spark',
-    'Kafka',
-    'Airflow',
-    'Multi-Tenant SaaS',
-    'Cloud Platforms',
-    'Technical Founder',
-    'SaaS Development',
+    'AWS',
+    'DevOps',
+    'RESTful APIs',
+    'Microservices',
     'Thong Truong'
   ],
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - AI & Data Platform Engineer',
+    title: 'Thong Truong - Fullstack Python Developer',
     description:
-      'AI & Data Platform Engineer building scalable FastAPI systems, distributed pipelines, and AI-powered SaaS platforms.',
+      'Fullstack Python Developer architecting robust, scalable web ecosystems using Django and FastAPI.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     locale: 'en_US',
@@ -66,8 +64,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      </head>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans`}>
+        {children}
+      </body>
     </html>
   );
 }
