@@ -1,10 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export default function ContactPage() {
+  const [state, handleSubmit] = useForm("mykgzwwg");
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,29 +14,38 @@ export default function ContactPage() {
     message: ''
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`Portfolio Contact: ${formData.name} - ${formData.sector}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Sector: ${formData.sector}\n\n` +
-      `Message:\n${formData.message}`
+  if (state.succeeded) {
+    return (
+      <>
+        <Navigation />
+        <main className="flex-grow pt-20 relative z-10 min-h-screen">
+          <div className="fixed inset-0 pointer-events-none z-0">
+            <div className="absolute inset-0 tech-grid opacity-[0.4]"></div>
+          </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24 relative z-10">
+            <div className="max-w-2xl mx-auto text-center">
+              <div className="mb-8">
+                <span className="material-icons text-6xl text-primary mb-4">check_circle</span>
+                <h1 className="text-4xl font-display font-bold text-gray-900 dark:text-white mb-4">
+                  Message Sent Successfully!
+                </h1>
+                <p className="text-lg text-gray-600 dark:text-gray-400">
+                  Thank you for reaching out. I&apos;ll get back to you within 24 hours.
+                </p>
+              </div>
+              <button
+                onClick={() => window.location.reload()}
+                className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white bg-primary hover:bg-blue-600 font-mono transition-all duration-300 shadow-[0_0_10px_rgba(59,130,246,0.2)] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"
+              >
+                Send Another Message
+              </button>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </>
     );
-
-    const mailtoLink = `mailto:contact@thongtruong.com?subject=${subject}&body=${body}`;
-
-    // Open email client
-    window.location.href = mailtoLink;
-
-    // Reset form
-    setFormData({ name: '', email: '', sector: 'Python Development', message: '' });
-
-    // Show success message
-    alert('Email client opened with your message! Please send it to complete submission.');
-  };
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -186,6 +197,7 @@ export default function ContactPage() {
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all"
                         required
                       />
+                      <ValidationError prefix="Name" field="name" errors={state.errors} />
                     </div>
                     
                     <div className="group">
@@ -205,6 +217,7 @@ export default function ContactPage() {
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all"
                         required
                       />
+                      <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </div>
                   </div>
                   
@@ -252,16 +265,18 @@ export default function ContactPage() {
                       className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all resize-none"
                       required
                     ></textarea>
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                   </div>
                   
                   <button
                     type="submit"
-                    className="w-full group flex items-center justify-center py-4 px-4 border border-transparent rounded-lg shadow-lg shadow-primary/20 text-sm font-mono font-bold text-white bg-primary hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all uppercase tracking-wide overflow-hidden relative"
+                    disabled={state.submitting}
+                    className="w-full group flex items-center justify-center py-4 px-4 border border-transparent rounded-lg shadow-lg shadow-primary/20 text-sm font-mono font-bold text-white bg-primary hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all uppercase tracking-wide overflow-hidden relative disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <span className="absolute w-full h-full bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-out skew-x-12"></span>
-                    <span className="mr-2">Send Transmission</span>
+                    <span className="mr-2">{state.submitting ? 'Sending...' : 'Send Transmission'}</span>
                     <span className="material-icons text-lg group-hover:translate-x-1 transition-transform">
-                      send
+                      {state.submitting ? 'hourglass_empty' : 'send'}
                     </span>
                   </button>
                 </form>
