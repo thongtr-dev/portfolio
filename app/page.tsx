@@ -42,7 +42,7 @@ export default function HomePage() {
               <div className="bg-white/50 dark:bg-gray-800/50 border-l-4 border-primary p-6 backdrop-blur-sm max-w-2xl rounded-r-lg">
                 <p className="font-mono text-sm text-primary mb-2 opacity-75">{/* bio.txt */}</p>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-light">
-                  I&apos;m Thong, Associate Founder at <span className="font-bold text-gray-900 dark:text-white">Nexus Tech Global</span> and Dev Lead for <span className="font-bold text-gray-900 dark:text-white">SiteBotic</span>. Full-stack developer and data engineer specializing in Python, TypeScript, and scalable data pipelines. I architect AI-powered SaaS platforms and ETL systems that process millions of data points.
+                  I&apos;m Thong, Associate Founder at <span className="font-bold text-gray-900 dark:text-white">Nexus Tech Global</span> and Dev Lead for <span className="font-bold text-gray-900 dark:text-white">SiteBotic</span>. Full-stack developer and data engineer specializing in Python, TypeScript, and scalable data pipelines. I architect AI-powered SaaS platforms and ETL systems that handle large-scale data processing.
                 </p>
               </div>
               
@@ -225,10 +225,16 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary mb-6 rounded border border-primary/20">
                   <span className="material-icons text-2xl">dns</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">Backend Development</h3>
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                  Building high-performance APIs with <span className="font-mono text-xs text-primary">FastAPI</span> and <span className="font-mono text-xs text-primary">Python</span>. Implementing RAG pipelines, async processing with Dramatiq, and microservices architecture with Docker.
-                </p>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Backend Development</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">FastAPI</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Flask</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">SQLAlchemy</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">GraphQL</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">PostgreSQL</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Redis</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Docker</span>
+                </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
                 </div>
@@ -243,10 +249,14 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-accent/10 flex items-center justify-center text-accent mb-6 rounded border border-accent/20">
                   <span className="material-icons text-2xl">web</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">Frontend Engineering</h3>
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                  Crafting modern web applications with <span className="font-mono text-xs text-accent">React</span> and <span className="font-mono text-xs text-accent">TypeScript</span>. Building real-time dashboards, data visualizations, and responsive SaaS interfaces with Tailwind CSS.
-                </p>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Frontend Engineering</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">React</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">TypeScript</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Next.js</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Tailwind CSS</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Vite</span>
+                </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
                 </div>
@@ -261,10 +271,15 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 rounded border border-blue-500/20">
                   <span className="material-icons text-2xl">analytics</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">Data Engineering</h3>
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                  Designing ETL pipelines with <span className="font-mono text-xs text-blue-500">Apache Spark</span> and <span className="font-mono text-xs text-blue-500">Airflow</span>. Building distributed data processing systems, implementing Customer 360 analytics, and optimizing PostgreSQL warehouses.
-                </p>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Data Engineering</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Apache Spark</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Airflow</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Kafka</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">AWS</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">PostgreSQL</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Python</span>
+                </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
                 </div>
