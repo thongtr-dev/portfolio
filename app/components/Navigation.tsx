@@ -33,6 +33,12 @@ export default function Navigation() {
               ./projects
             </Link>
             <Link
+              href="/cv"
+              className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
+            >
+              ./cv
+            </Link>
+            <Link
               href="/contact"
               className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
             >
@@ -76,6 +82,13 @@ export default function Navigation() {
                 className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-all"
               >
                 ./projects
+              </Link>
+              <Link
+                href="/cv"
+                onClick={() => setIsMenuOpen(false)}
+                className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-all"
+              >
+                ./cv
               </Link>
               <Link
                 href="/contact"

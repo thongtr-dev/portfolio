@@ -56,16 +56,6 @@ export default function HomePage() {
                     View_Projects <span className="material-icons text-sm">arrow_forward</span>
                   </span>
                 </Link>
-                
-                <Link 
-                  href="https://drive.google.com/file/d/1QSMxjzTM1aEXf5T8QPCUkOA8E-G8DTXe/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-gray-700 dark:text-gray-200 bg-transparent border-2 border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary transition-all font-mono"
-                >
-                  <span className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-primary">&gt;</span>
-                  Download_CV
-                </Link>
               </div>
               
               <div className="pt-8 flex flex-wrap gap-8 text-xs font-mono text-gray-500 dark:text-gray-400 uppercase tracking-widest border-t border-gray-200 dark:border-gray-800 mt-8">
