@@ -16,8 +16,8 @@ export default function CVPage() {
     message: ''
   });
 
-  // Redirect to thank-you page on successful submission
   if (state.succeeded) {
+    sessionStorage.setItem('cv_form_submitted', 'true');
     router.push('/cv/thank-you');
     return null;
   }

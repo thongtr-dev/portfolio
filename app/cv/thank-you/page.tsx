@@ -1,8 +1,24 @@
+'use client';
+
 import Link from 'next/link';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
 export default function CVThankYouPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const hasSubmitted = sessionStorage.getItem('cv_form_submitted');
+
+    if (!hasSubmitted) {
+      router.push('/cv');
+      return;
+    }
+
+    sessionStorage.removeItem('cv_form_submitted');
+  }, [router]);
   return (
     <>
       <Navigation />

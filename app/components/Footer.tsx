@@ -37,14 +37,6 @@ export default function Footer() {
               >
                 <span className="text-xs font-bold font-mono">GH</span>
               </a>
-              <a
-                href="https://drive.google.com/file/d/1QSMxjzTM1aEXf5T8QPCUkOA8E-G8DTXe/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded border border-gray-700 hover:border-primary hover:bg-primary/20 hover:text-primary flex items-center justify-center transition duration-300"
-              >
-                <span className="text-xs font-bold font-mono">CV</span>
-              </a>
             </div>
           </div>
 
@@ -61,6 +53,11 @@ export default function Footer() {
               <li>
                 <Link href="/projects" className="hover:text-white transition flex items-center gap-2">
                   <span className="text-primary">&gt;</span> ./projects
+                </Link>
+              </li>
+              <li>
+                <Link href="/cv" className="hover:text-white transition flex items-center gap-2">
+                  <span className="text-primary">&gt;</span> ./cv
                 </Link>
               </li>
               <li>
