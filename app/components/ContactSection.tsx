@@ -20,7 +20,7 @@ export default function ContactSection() {
               Get in Touch
             </a>
             <a
-              href="https://drive.google.com/file/d/1QSMxjzTM1aEXf5T8QPCUkOA8E-G8DTXe/view?usp=sharing"
+              href="https://drive.google.com/file/d/15WlXLSO8cK_vmzEWUcGyU_ZVyg3f7RjT/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
