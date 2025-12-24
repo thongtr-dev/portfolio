@@ -61,7 +61,7 @@ export default function CVPage() {
                 </h1>
 
                 <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed font-light mb-6">
-                  At least let me know who you are before downloading my CV. 😊
+                  Let's connect first - I'd love to know who you are before sharing my CV.
                 </p>
 
                 <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed font-light">
