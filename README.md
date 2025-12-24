@@ -1,10 +1,6 @@
-# Full Stack Developer Portfolio Template
+# Thong Truong - Data Engineer & Backend Developer Portfolio
 
-[Demo](https://www.devportfoliotemplates.com/portfolio-templates/full-stack-developer)
-
-## Getting Started
-
-You have two options to get started with this template:
+A modern, responsive portfolio showcasing data engineering expertise, ETL pipeline development, backend systems, data product creation, and full-stack development with Python, FastAPI, React, and PostgreSQL.
 
 ### Option 1: Using Git Sparse Checkout
 

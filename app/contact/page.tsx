@@ -10,7 +10,7 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    sector: 'Python Development',
+    sector: 'Data Engineering',
     message: ''
   });
 
@@ -86,7 +86,7 @@ export default function ContactPage() {
                 </h1>
                 
                 <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed font-light mb-10">
-                  Associate Founder at Nexus Tech Global and Dev Lead for SiteBotic. Full-stack Python/TypeScript developer and data engineer. I build AI-powered SaaS platforms, design ETL pipelines, and architect enterprise solutions. Let&apos;s transform your ideas into production-ready systems.
+                  Data Engineer and Backend Developer at Nexus Tech Global. I specialize in building scalable ETL pipelines, distributed data processing systems, AI-powered platforms, and end-to-end data products using Python, FastAPI, and PostgreSQL. With full-stack experience in React and TypeScript, I create complete solutions from data ingestion to user interfaces. Let&apos;s discuss how we can transform your data challenges into production-ready solutions.
                 </p>
                 
                 {/* Contact Methods */}
@@ -236,10 +236,11 @@ export default function ContactPage() {
                         onChange={handleChange}
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white focus:border-primary focus:ring-0 py-3 px-4 transition-all appearance-none"
                       >
-                        <option>Python Development</option>
                         <option>Data Engineering</option>
-                        <option>Full Stack Architecture</option>
-                        <option>Code Review / Audit</option>
+                        <option>ETL Pipeline Development</option>
+                        <option>Backend API Development</option>
+                        <option>Data Platform Architecture</option>
+                        <option>Python/FastAPI Consulting</option>
                         <option>Other</option>
                       </select>
                       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">

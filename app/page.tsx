@@ -23,7 +23,7 @@ export default function HomePage() {
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                   </span>
                   <span className="font-mono text-primary text-xs font-bold tracking-wide uppercase">
-                    Associate Founder & Dev Lead
+                      Founder & Data Engineer
                   </span>
                 </div>
                 
@@ -42,7 +42,7 @@ export default function HomePage() {
               <div className="bg-white/50 dark:bg-gray-800/50 border-l-4 border-primary p-6 backdrop-blur-sm max-w-2xl rounded-r-lg">
                 <p className="font-mono text-sm text-primary mb-2 opacity-75">{/* bio.txt */}</p>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-light">
-                  I&apos;m Thong, Associate Founder at <span className="font-bold text-gray-900 dark:text-white">Nexus Tech Global</span> and Dev Lead for <span className="font-bold text-gray-900 dark:text-white">SiteBotic</span>. Full-stack developer and data engineer specializing in Python, TypeScript, and scalable data pipelines. I architect AI-powered SaaS platforms and ETL systems that handle large-scale data processing.
+                  I&apos;m Thong, Data Engineer and Backend Developer at <span className="font-bold text-gray-900 dark:text-white">Nexus Tech Global</span> and Dev Lead for <span className="font-bold text-gray-900 dark:text-white">SiteBotic</span>. I build scalable ETL pipelines, distributed data processing systems, AI-powered platforms, and end-to-end data products using Python, FastAPI, SQL, and PostgreSQL. With full-stack experience in React and TypeScript, I create complete solutions from data ingestion to user interfaces.
                 </p>
               </div>
               
@@ -177,11 +177,11 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2 group cursor-default">
                   <span className="w-2 h-2 rounded-sm bg-blue-500 group-hover:bg-blue-400 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-blue-400 transition">TypeScript</span>
+                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-blue-400 transition">PostgreSQL</span>
                 </div>
                 <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-cyan-500 group-hover:bg-cyan-400 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-cyan-400 transition">React</span>
+                  <span className="w-2 h-2 rounded-sm bg-teal-600 group-hover:bg-teal-500 transition-colors"></span>
+                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-teal-500 transition">SQL</span>
                 </div>
                 <div className="flex items-center gap-2 group cursor-default">
                   <span className="w-2 h-2 rounded-sm bg-orange-600 group-hover:bg-orange-500 transition-colors"></span>
@@ -190,6 +190,18 @@ export default function HomePage() {
                 <div className="flex items-center gap-2 group cursor-default">
                   <span className="w-2 h-2 rounded-sm bg-blue-700 group-hover:bg-blue-600 transition-colors"></span>
                   <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-blue-600 transition">Docker</span>
+                </div>
+                <div className="flex items-center gap-2 group cursor-default">
+                  <span className="w-2 h-2 rounded-sm bg-cyan-500 group-hover:bg-cyan-400 transition-colors"></span>
+                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-cyan-400 transition">React</span>
+                </div>
+                <div className="flex items-center gap-2 group cursor-default">
+                  <span className="w-2 h-2 rounded-sm bg-blue-600 group-hover:bg-blue-500 transition-colors"></span>
+                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-blue-500 transition">TypeScript</span>
+                </div>
+                <div className="flex items-center gap-2 group cursor-default">
+                  <span className="w-2 h-2 rounded-sm bg-gray-600 group-hover:bg-gray-500 transition-colors"></span>
+                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-gray-500 transition">Next.js</span>
                 </div>
               </div>
             </div>
@@ -216,7 +228,7 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
               <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden transition-colors">
                 <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition transform group-hover:scale-110">
@@ -225,15 +237,16 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary mb-6 rounded border border-primary/20">
                   <span className="material-icons text-2xl">dns</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Backend Development</h3>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Data Pipelines & ETL</h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">FastAPI</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Flask</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">SQLAlchemy</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">GraphQL</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">PostgreSQL</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Redis</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Docker</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Apache Spark</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Apache Airflow</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">ETL/ELT</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Batch Processing</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Streaming Data</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Apache Kafka</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Data Quality</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Workflow Orchestration</span>
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
@@ -249,13 +262,16 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-accent/10 flex items-center justify-center text-accent mb-6 rounded border border-accent/20">
                   <span className="material-icons text-2xl">web</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Frontend Engineering</h3>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Data Storage & APIs</h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">React</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">TypeScript</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Next.js</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Tailwind CSS</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Vite</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">PostgreSQL</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">pgvector</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">SQL</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">FastAPI</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Redis</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Data Modeling</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">REST APIs</span>
+                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Vector Databases</span>
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
@@ -271,14 +287,41 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 rounded border border-blue-500/20">
                   <span className="material-icons text-2xl">analytics</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Data Engineering</h3>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Data Products & Analytics</h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Apache Spark</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Airflow</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Kafka</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">AWS</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">PostgreSQL</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Python</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Data Products</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">SaaS Platforms</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Metabase</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Business Intelligence</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Data Visualization</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">ML Applications</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Analytics Platforms</span>
+                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">User Dashboards</span>
+                </div>
+                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
+                </div>
+              </div>
+            </div>
+            
+            <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
+              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden transition-colors">
+                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition transform group-hover:scale-110">
+                  <span className="material-icons text-8xl text-primary">build</span>
+                </div>
+                <div className="w-12 h-12 bg-green-500/10 flex items-center justify-center text-green-500 mb-6 rounded border border-green-500/20">
+                  <span className="material-icons text-2xl">build</span>
+                </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Infrastructure & DevOps</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Docker</span>
+                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">CI/CD</span>
+                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">GitHub Actions</span>
+                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">AWS EKS</span>
+                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Containerization</span>
+                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Monitoring</span>
+                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Deployment</span>
+                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Production Systems</span>
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
@@ -320,11 +363,11 @@ export default function HomePage() {
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Nexus Tech Global</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Associate Founder - AI technology company delivering enterprise chatbot solutions and custom software development.</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Founder & Technical Lead - Building end-to-end data platforms and AI-powered SaaS solutions with scalable ETL pipelines and distributed processing.</p>
                 <div className="mt-auto flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Solutions</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Leadership</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Enterprise</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Data Engineering</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Platforms</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">ETL Pipelines</span>
                 </div>
               </div>
             </div>
@@ -343,11 +386,11 @@ export default function HomePage() {
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">SiteBotic</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Dev Lead - No-code AI chatbot platform enabling websites to deploy intelligent bots trained on their content.</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Dev Lead - SaaS data product: No-code AI chatbot platform with automated data ingestion, vector search, and scalable data processing for enterprise clients.</p>
                 <div className="mt-auto flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">FastAPI</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">React</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">pgvector</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Data Product</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">SaaS</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Platform</span>
                 </div>
               </div>
             </div>

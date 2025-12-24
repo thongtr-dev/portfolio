@@ -24,32 +24,36 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - Fullstack Python Developer',
+  title: 'Thong Truong - Data Engineer & Full-Stack Developer',
   description:
-    'Fullstack Python Developer architecting robust, scalable web ecosystems using Django and FastAPI. Transforming complex logic into elegant, high-performance user experiences.',
+    'Data Engineer and Backend Developer specializing in Python, FastAPI, SQL, and PostgreSQL. Building scalable ETL pipelines, distributed data processing, AI-powered systems, and end-to-end data products. Full-stack experience with React, TypeScript, and Next.js.',
   keywords: [
-    'Fullstack Developer',
-    'Python Developer',
-    'Django Developer',
-    'FastAPI Developer',
+    'Data Engineer',
     'Backend Engineer',
-    'Frontend Engineer',
-    'Web Development',
-    'React Developer',
+    'Python Developer',
+    'FastAPI Developer',
     'PostgreSQL',
-    'Docker',
-    'AWS',
-    'DevOps',
-    'RESTful APIs',
-    'Microservices',
+    'Apache Spark',
+    'Apache Airflow',
+    'ETL Pipelines',
+    'Data Pipelines',
+    'SQL',
+    'Distributed Systems',
+    'Apache Kafka',
+    'Data Products',
+    'SaaS Platforms',
+    'React Developer',
+    'TypeScript',
+    'Next.js',
+    'Full Stack Developer',
     'Thong Truong'
   ],
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - Fullstack Python Developer',
+    title: 'Thong Truong - Data Engineer & Full-Stack Developer',
     description:
-      'Fullstack Python Developer architecting robust, scalable web ecosystems using Django and FastAPI.',
+      'Data Engineer and Backend Developer specializing in Python, FastAPI, SQL, and PostgreSQL. Building scalable ETL pipelines, distributed data processing, and end-to-end data products. Full-stack experience with React, TypeScript, and Next.js.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     locale: 'en_US',
@@ -68,6 +72,46 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Thong Truong",
+              "jobTitle": "Data Engineer & Backend Developer",
+              "description": "Data Engineer specializing in Python, FastAPI, SQL, PostgreSQL, ETL pipelines, and distributed data processing",
+              "url": "https://thongtruong.com",
+              "sameAs": [
+                "https://github.com/thongtr-dev",
+                "https://www.linkedin.com/in/thongtr/"
+              ],
+              "knowsAbout": [
+                "Data Engineering",
+                "ETL Pipelines",
+                "Python",
+                "FastAPI",
+                "PostgreSQL",
+                "Apache Spark",
+                "Apache Airflow",
+                "Apache Kafka",
+                "SQL",
+                "Distributed Systems",
+                "Data Products",
+                "SaaS Development",
+                "React",
+                "TypeScript",
+                "Next.js",
+                "Full Stack Development"
+              ],
+              "hasOccupation": {
+                "@type": "Occupation",
+                "name": "Data Engineer",
+                "occupationalCategory": "Data Engineer"
+              }
+            })
+          }}
+        />
       </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans`}>
         {children}
