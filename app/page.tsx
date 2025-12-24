@@ -153,58 +153,86 @@ export default function HomePage() {
         </div>
       </section>
       
-      {/* Tech Stack Section */}
-      <section className="py-12 border-y border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-2 h-full bg-primary"></div>
+      {/* Selected Projects Preview */}
+      <section className="py-24 bg-surface-light dark:bg-surface-dark relative border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex items-center gap-3 whitespace-nowrap">
-              <span className="material-icons text-gray-400">terminal</span>
-              <p className="text-sm font-mono font-bold text-gray-700 dark:text-gray-300 uppercase tracking-widest">
-                Stack_Inventory:
-              </p>
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-2">Selected Works</h2>
+              <p className="text-gray-600 dark:text-gray-400 font-mono text-sm">{/* Executed_Projects_List */}</p>
             </div>
-            
-            <div className="w-full">
-              <div className="flex flex-wrap justify-center md:justify-end items-center gap-x-10 gap-y-6">
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="text-2xl opacity-50 group-hover:opacity-100 transition-opacity grayscale group-hover:grayscale-0">🐍</span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-blue-500 transition">Python</span>
+            <Link 
+              href="/projects"
+              className="text-primary font-medium font-mono text-sm hover:text-blue-700 transition flex items-center gap-2 group border-b border-transparent hover:border-primary pb-0.5"
+            >
+              view_all_projects() <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </Link>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <Link 
+              href="https://nexustechglobal.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full cursor-pointer"
+            >
+              <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
+                <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">Production</div>
+                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10"></div>
+                <Image
+                  src="/nexus-tech-global-thumbnail.png"
+                  alt="Nexus Tech Global"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
+                <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Nexus Tech Global</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Founder & Technical Lead - Building end-to-end data platforms and AI-powered SaaS solutions with scalable ETL pipelines and distributed processing.</p>
+                <div className="mt-auto flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Data Engineering</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Platforms</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">ETL Pipelines</span>
                 </div>
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-teal-500 group-hover:bg-teal-400 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-teal-400 transition">FastAPI</span>
-                </div>
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-blue-500 group-hover:bg-blue-400 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-blue-400 transition">PostgreSQL</span>
-                </div>
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-teal-600 group-hover:bg-teal-500 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-teal-500 transition">SQL</span>
-                </div>
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-orange-600 group-hover:bg-orange-500 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-orange-500 transition">Apache Spark</span>
-                </div>
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-blue-700 group-hover:bg-blue-600 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-blue-600 transition">Docker</span>
-                </div>
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-cyan-500 group-hover:bg-cyan-400 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-cyan-400 transition">React</span>
-                </div>
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-blue-600 group-hover:bg-blue-500 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-blue-500 transition">TypeScript</span>
-                </div>
-                <div className="flex items-center gap-2 group cursor-default">
-                  <span className="w-2 h-2 rounded-sm bg-gray-600 group-hover:bg-gray-500 transition-colors"></span>
-                  <span className="font-mono text-sm font-semibold text-gray-600 dark:text-gray-400 group-hover:text-gray-500 transition">Next.js</span>
+                <div className="mt-4 flex items-center gap-2 text-xs font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span>Visit live site</span>
+                  <span className="material-icons text-sm">open_in_new</span>
                 </div>
               </div>
-            </div>
+            </Link>
+            
+            <Link 
+              href="https://sitebotic.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full cursor-pointer"
+            >
+              <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
+                <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">Production</div>
+                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10"></div>
+                <Image
+                  src="/sitebotic-thumbnail.png"
+                  alt="SiteBotic AI Chatbot Platform"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
+                <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">SiteBotic</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Dev Lead - SaaS data product: No-code AI chatbot platform with automated data ingestion, vector search, and scalable data processing for enterprise clients.</p>
+                <div className="mt-auto flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Data Product</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">SaaS</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Platform</span>
+                </div>
+                <div className="mt-4 flex items-center gap-2 text-xs font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span>Visit live site</span>
+                  <span className="material-icons text-sm">open_in_new</span>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -325,72 +353,6 @@ export default function HomePage() {
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Selected Projects Preview */}
-      <section className="py-24 bg-surface-light dark:bg-surface-dark relative border-t border-gray-200 dark:border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-2">Selected Works</h2>
-              <p className="text-gray-600 dark:text-gray-400 font-mono text-sm">{/* Executed_Projects_List */}</p>
-            </div>
-            <Link 
-              href="/projects"
-              className="text-primary font-medium font-mono text-sm hover:text-blue-700 transition flex items-center gap-2 group border-b border-transparent hover:border-primary pb-0.5"
-            >
-              view_all_projects() <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </Link>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full">
-              <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">Production</div>
-                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10"></div>
-                <Image
-                  src="/nexus-tech-global-thumbnail.png"
-                  alt="Nexus Tech Global"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Nexus Tech Global</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Founder & Technical Lead - Building end-to-end data platforms and AI-powered SaaS solutions with scalable ETL pipelines and distributed processing.</p>
-                <div className="mt-auto flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Data Engineering</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Platforms</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">ETL Pipelines</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full">
-              <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">Production</div>
-                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10"></div>
-                <Image
-                  src="/sitebotic-thumbnail.png"
-                  alt="SiteBotic AI Chatbot Platform"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">SiteBotic</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Dev Lead - SaaS data product: No-code AI chatbot platform with automated data ingestion, vector search, and scalable data processing for enterprise clients.</p>
-                <div className="mt-auto flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Data Product</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">SaaS</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Platform</span>
                 </div>
               </div>
             </div>

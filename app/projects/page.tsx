@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -110,11 +111,19 @@ export default function ProjectsPage() {
         <section className="py-24 bg-surface-light dark:bg-surface-dark relative border-t border-gray-200 dark:border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project) => (
-                <div
-                  key={project.id}
-                  className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full"
-                >
+              {projects.map((project) => {
+                const projectUrl = project.liveApp || project.website || project.github;
+                const isExternal = projectUrl && (projectUrl.startsWith('http') || projectUrl.startsWith('https'));
+                
+                return (
+                  <Link
+                    key={project.id}
+                    href={projectUrl || '#'}
+                    target={isExternal ? "_blank" : undefined}
+                    rel={isExternal ? "noopener noreferrer" : undefined}
+                    id={project.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}
+                    className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full cursor-pointer"
+                  >
                   {/* Project Image */}
                   <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
                     <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">
@@ -159,38 +168,15 @@ export default function ProjectsPage() {
                       ))}
                     </div>
                     
-                    {/* View Button */}
-                    <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800">
-                      {project.website ? (
-                        <a 
-                          href={project.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-primary font-mono text-sm hover:text-blue-700 transition flex items-center gap-2 group/btn"
-                        >
-                          <span className="opacity-0 -ml-2 group-hover/btn:opacity-100 group-hover/btn:ml-0 transition-all duration-300">&gt;</span>
-                          Visit Website
-                        </a>
-                      ) : project.github ? (
-                        <a 
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-primary font-mono text-sm hover:text-blue-700 transition flex items-center gap-2 group/btn"
-                        >
-                          <span className="opacity-0 -ml-2 group-hover/btn:opacity-100 group-hover/btn:ml-0 transition-all duration-300">&gt;</span>
-                          View on GitHub
-                        </a>
-                      ) : (
-                        <button className="text-primary font-mono text-sm hover:text-blue-700 transition flex items-center gap-2 group/btn">
-                          <span className="opacity-0 -ml-2 group-hover/btn:opacity-100 group-hover/btn:ml-0 transition-all duration-300">&gt;</span>
-                          View Details
-                        </button>
-                      )}
+                    {/* Click Indicator */}
+                    <div className="mt-4 flex items-center gap-2 text-xs font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                      <span>{project.liveApp ? 'Visit live app' : project.website ? 'Visit website' : project.github ? 'View on GitHub' : 'View details'}</span>
+                      <span className="material-icons text-sm">{isExternal ? 'open_in_new' : 'arrow_forward'}</span>
                     </div>
                   </div>
-                </div>
-              ))}
+                </Link>
+              );
+              })}
             </div>
           </div>
         </section>
