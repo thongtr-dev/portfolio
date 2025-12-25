@@ -114,8 +114,14 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: '卒業後、現実世界が厳しく襲ってきました。日本語学科の学位を持って、日本語環境でのゲーム業界での仕事を求めましたが、懸命の努力にもかかわらず注目されることができませんでした - 私の人文科学の背景は技術的なゲームの役割には関連性がないと見なされました。食卓に食べ物を並べるために、プライベートセンターで英語と日本語を教える仕事を何でも引き受けなければなりませんでした。'
     },
     selfTaughtContent3: {
-      en: 'While I\'ve transitioned fully into tech and haven\'t actively used my Japanese studies professionally, I maintain my language skills and cultural understanding. This background could be valuable for Japanese companies or international projects requiring cross-cultural communication and understanding of Japanese business practices.',
+      en: "While I've transitioned fully into tech and haven't actively used my Japanese studies professionally, I maintain my language skills and cultural understanding. This background could be valuable for Japanese companies or international projects requiring cross-cultural communication and understanding of Japanese business practices.",
       ja: '完全にテクノロジーに移行し、日本語学習を積極的に職業的に使用していませんが、言語スキルと文化的理解を維持しています。この背景は、日本企業や異文化間コミュニケーションと日本のビジネス慣行の理解を必要とする国際プロジェクトにとって価値があるかもしれません。'
+    },
+
+    // About Page - Japanese Ability Note (final section)
+    japaneseAbilityNote: {
+      en: "Although I have fully transitioned into tech and haven't actively used Japanese in my professional work, I still retain reading and listening comprehension. My spoken Japanese, however, is much rustier than it was during university. To use Japanese confidently again in a professional business context, I would need an environment where I can use it every day. If you understand this starting point and still choose to work with me, I will treat it as a serious commitment: give me around six months in a Japanese-speaking environment and I'm confident I can regain JLPT N2 level and become a strong bridge between technical work and Japanese communication.",
+      ja: '現在は完全にIT分野にキャリアを移しており、日本語を仕事で本格的に使う機会はほとんどありませんでしたが、読む・聞く力は今でもある程度維持しています。一方で、大学時代と比べると日本語をスムーズに話す力はかなり錆びついてしまったと感じています。ビジネスの場で自信を持って日本語を使うためには、日常的に日本語を使える環境がもう一度必要だと思っています。それでもなお私と一緒に働きたいと考えてくださるのであれば、必ずお応えします。日本語を使う環境をいただければ、半年ほどでJLPT N2レベルを取り戻し、技術と日本語の両面で貢献できる人材になれると自信を持っています。'
     },
     selfTaughtContent4: {
       en: 'When COVID hit Vietnam severely, I was forced to stay home. During this time, I dedicated myself to learning SEO and WordPress. I tried my hand at affiliate marketing and Amazon dropshipping, though I quickly learned it wasn\'t as easy as it seemed.',

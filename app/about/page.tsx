@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { useLanguage } from '../components/LanguageProvider';
 
 export default function AboutPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <>
       <Navigation />
@@ -193,6 +193,11 @@ export default function AboutPage() {
 
             {/* Call to Action */}
             <div className="text-center space-y-6 pt-8">
+              {language === 'ja' && (
+                <p className="text-lg text-gray-600 dark:text-gray-300">
+                  {t('japaneseAbilityNote')}
+                </p>
+              )}
               <p className="text-lg text-gray-600 dark:text-gray-300">
                 {t('storyCTA')}
               </p>
