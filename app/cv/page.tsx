@@ -5,8 +5,10 @@ import { useForm, ValidationError } from '@formspree/react';
 import { useRouter } from 'next/navigation';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { useLanguage } from '../components/LanguageProvider';
 
 export default function CVPage() {
+  const { t } = useLanguage();
   const [state, handleSubmit] = useForm("xlgranez");
   const router = useRouter();
   const [formData, setFormData] = useState({
@@ -49,23 +51,23 @@ export default function CVPage() {
                 <div className="flex items-center space-x-2 mb-6">
                   <span className="h-px w-8 bg-primary"></span>
                   <span className="text-primary font-mono text-xs font-semibold tracking-wider uppercase">
-                    Download CV
+                    {t('cvBadge')}
                   </span>
                 </div>
 
                 <h1 className="text-4xl lg:text-5xl font-display font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                  Access My <br />
+                  {t('cvHeroTitleLine1')} <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-accent">
-                    Professional CV
+                    {t('cvHeroTitleHighlight')}
                   </span>
                 </h1>
 
                 <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed font-light mb-6">
-                  Let's connect first - I'd love to know who you are before sharing my CV.
+                  {t('cvHeroParagraph1')}
                 </p>
 
                 <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed font-light">
-                  Fill out the form below and I&apos;ll send you my latest CV. I&apos;m always interested in connecting with fellow developers, data engineers, and tech leaders.
+                  {t('cvHeroParagraph2')}
                 </p>
               </div>
             </div>
@@ -81,7 +83,7 @@ export default function CVPage() {
                 >
                   <div className="flex justify-between items-center border-b border-gray-200 dark:border-white/5 pb-6">
                     <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white">
-                      Get My CV
+                      {t('cvFormTitle')}
                     </h3>
                     <div className="flex space-x-1">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
@@ -96,7 +98,7 @@ export default function CVPage() {
                         htmlFor="name"
                         className="block text-xs font-mono font-medium text-gray-600 dark:text-gray-400 mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors"
                       >
-                        Name_ <span className="text-red-500">*</span>
+                        {t('labelName')} <span className="text-red-500">*</span>
                       </label>
                       <input
                         type="text"
@@ -104,7 +106,7 @@ export default function CVPage() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Enter your name"
+                        placeholder={t('placeholderName')}
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all"
                         required
                       />
@@ -116,7 +118,7 @@ export default function CVPage() {
                         htmlFor="email"
                         className="block text-xs font-mono font-medium text-gray-600 dark:text-gray-400 mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors"
                       >
-                        Email_ <span className="text-red-500">*</span>
+                        {t('labelEmail')} <span className="text-red-500">*</span>
                       </label>
                       <input
                         type="email"
@@ -124,7 +126,7 @@ export default function CVPage() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="name@domain.com"
+                        placeholder={t('placeholderEmail')}
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all"
                         required
                       />
@@ -136,7 +138,7 @@ export default function CVPage() {
                         htmlFor="company"
                         className="block text-xs font-mono font-medium text-gray-600 dark:text-gray-400 mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors"
                       >
-                        Company_ (Optional)
+                        {t('labelCompanyOptional')}
                       </label>
                       <input
                         type="text"
@@ -144,7 +146,7 @@ export default function CVPage() {
                         name="company"
                         value={formData.company || ''}
                         onChange={handleChange}
-                        placeholder="Your company or organization"
+                        placeholder={t('placeholderCompany')}
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all"
                       />
                       <ValidationError prefix="Company" field="company" errors={state.errors} />
@@ -155,14 +157,14 @@ export default function CVPage() {
                         htmlFor="message"
                         className="block text-xs font-mono font-medium text-gray-600 dark:text-gray-400 mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors"
                       >
-                        Message_ (Optional)
+                        {t('labelMessageOptional')}
                       </label>
                       <textarea
                         id="message"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        placeholder="Any specific questions or context about my CV?"
+                        placeholder={t('cvPlaceholderMessage')}
                         rows={4}
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all resize-none"
                       ></textarea>
@@ -176,7 +178,7 @@ export default function CVPage() {
                     className="w-full group flex items-center justify-center py-4 px-4 border border-transparent rounded-lg shadow-lg shadow-primary/20 text-sm font-mono font-bold text-white bg-primary hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all uppercase tracking-wide overflow-hidden relative disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <span className="absolute w-full h-full bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-out skew-x-12"></span>
-                    <span className="mr-2">{state.submitting ? 'Processing...' : 'Get My CV'}</span>
+                    <span className="mr-2">{state.submitting ? t('cvButtonProcessing') : t('cvButtonGet')}</span>
                     <span className="material-icons text-lg group-hover:translate-x-1 transition-transform">
                       {state.submitting ? 'hourglass_empty' : 'download'}
                     </span>

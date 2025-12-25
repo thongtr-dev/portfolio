@@ -2,9 +2,12 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import LanguageToggle from './LanguageToggle';
+import { useLanguage } from './LanguageProvider';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <nav className="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
@@ -19,31 +22,35 @@ export default function Navigation() {
             </span>
           </Link>
 
-          <div className="hidden md:flex space-x-1 items-center bg-gray-100 dark:bg-gray-800/50 p-1 rounded-lg border border-gray-200 dark:border-gray-700">
-            <Link
-              href="/"
-              className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
-            >
-              ./home
-            </Link>
-            <Link
-              href="/projects"
-              className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
-            >
-              ./projects
-            </Link>
-            <Link
-              href="/cv"
-              className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
-            >
-              ./cv
-            </Link>
-            <Link
-              href="/contact"
-              className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
-            >
-              ./contact
-            </Link>
+          <div className="hidden md:flex items-center gap-4">
+            <div className="flex space-x-1 items-center bg-gray-100 dark:bg-gray-800/50 p-1 rounded-lg border border-gray-200 dark:border-gray-700">
+              <Link
+                href="/"
+                className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
+              >
+                {t('home')}
+              </Link>
+              <Link
+                href="/projects"
+                className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
+              >
+                {t('projects')}
+              </Link>
+              <Link
+                href="/cv"
+                className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
+              >
+                {t('cv')}
+              </Link>
+              <Link
+                href="/contact"
+                className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-white dark:hover:bg-gray-800 rounded-md transition-all"
+              >
+                {t('contact')}
+              </Link>
+            </div>
+
+            <LanguageToggle />
           </div>
 
           <div className="hidden md:flex">
@@ -55,7 +62,8 @@ export default function Navigation() {
             </Link>
           </div>
 
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageToggle />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 dark:text-gray-300 hover:text-primary focus:outline-none p-2"
@@ -74,28 +82,28 @@ export default function Navigation() {
                 onClick={() => setIsMenuOpen(false)}
                 className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-all"
               >
-                ./home
+                {t('home')}
               </Link>
               <Link
                 href="/projects"
                 onClick={() => setIsMenuOpen(false)}
                 className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-all"
               >
-                ./projects
+                {t('projects')}
               </Link>
               <Link
                 href="/cv"
                 onClick={() => setIsMenuOpen(false)}
                 className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-all"
               >
-                ./cv
+                {t('cv')}
               </Link>
               <Link
                 href="/contact"
                 onClick={() => setIsMenuOpen(false)}
                 className="px-4 py-2 text-sm font-mono text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-all"
               >
-                ./contact
+                {t('contact')}
               </Link>
             </div>
           </div>

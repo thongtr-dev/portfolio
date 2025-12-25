@@ -1,9 +1,13 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import { useLanguage } from './components/LanguageProvider';
 
 export default function HomePage() {
+  const { t } = useLanguage();
   return (
     <>
       <Navigation />
@@ -23,26 +27,26 @@ export default function HomePage() {
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                   </span>
                   <span className="font-mono text-primary text-xs font-bold tracking-wide uppercase">
-                      Founder & Data Engineer
+                      {t('founderEngineer')}
                   </span>
                 </div>
                 
                 <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 dark:text-white leading-[1.1] tracking-tight">
-                  Building <br />
+                  {t('building')} <br />
                   <span className="relative inline-block text-primary">
-                    <span className="relative z-10">Data-Driven</span>
+                    <span className="relative z-10">{t('dataDriven')}</span>
                     <span className="absolute bottom-2 left-0 w-full h-3 bg-accent/20 -skew-x-12"></span>
                   </span>
                   <br />
-                  Solutions at <br />
-                  Scale
+                  {t('solutionsAt')} <br />
+                  {t('scale')}
                 </h1>
               </div>
               
               <div className="bg-white/50 dark:bg-gray-800/50 border-l-4 border-primary p-6 backdrop-blur-sm max-w-2xl rounded-r-lg">
                 <p className="font-mono text-sm text-primary mb-2 opacity-75">{/* bio.txt */}</p>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-light">
-                  I&apos;m Thong, Data Engineer and Backend Developer at <span className="font-bold text-gray-900 dark:text-white">Nexus Tech Global</span> and Dev Lead for <span className="font-bold text-gray-900 dark:text-white">SiteBotic</span>. I build scalable ETL pipelines, distributed data processing systems, AI-powered platforms, and end-to-end data products using Python, FastAPI, SQL, and PostgreSQL. With full-stack experience in React and TypeScript, I create complete solutions from data ingestion to user interfaces.
+                  {t('heroBio')}
                 </p>
               </div>
               
@@ -53,31 +57,31 @@ export default function HomePage() {
                 >
                   <div className="absolute inset-0 w-full h-full bg-blue-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
                   <span className="relative flex items-center gap-2">
-                    View_Projects <span className="material-icons text-sm">arrow_forward</span>
+                    {t('viewProjects')} <span className="material-icons text-sm">arrow_forward</span>
                   </span>
                 </Link>
                 
                 <Link 
-                  href="/cv"
+                  href="/about"
                   className="group inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-gray-700 dark:text-gray-200 bg-transparent border-2 border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary transition-all font-mono"
                 >
                   <span className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-primary">&gt;</span>
-                  Download_CV
+                  {t('downloadCV')}
                 </Link>
               </div>
               
               <div className="pt-8 flex flex-wrap gap-8 text-xs font-mono text-gray-500 dark:text-gray-400 uppercase tracking-widest border-t border-gray-200 dark:border-gray-800 mt-8">
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-primary">storage</span>
-                  Data Engineering
+                  {t('dataEngineering')}
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-accent">psychology</span>
-                  AI/ML Integration
+                  {t('aiMlIntegration')}
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-blue-400">code</span>
-                  Full Stack
+                  {t('fullStack')}
                 </div>
               </div>
             </div>
@@ -158,14 +162,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-2">Selected Works</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-2">{t('selectedWorksHeading')}</h2>
               <p className="text-gray-600 dark:text-gray-400 font-mono text-sm">{/* Executed_Projects_List */}</p>
             </div>
             <Link 
               href="/projects"
               className="text-primary font-medium font-mono text-sm hover:text-blue-700 transition flex items-center gap-2 group border-b border-transparent hover:border-primary pb-0.5"
             >
-              view_all_projects() <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              {t('viewAllProjects')} <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </Link>
           </div>
           
@@ -177,7 +181,7 @@ export default function HomePage() {
               className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full cursor-pointer"
             >
               <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">Production</div>
+                <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10"></div>
                 <Image
                   src="/nexus-tech-global-thumbnail.png"
@@ -189,14 +193,14 @@ export default function HomePage() {
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Nexus Tech Global</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Founder & Technical Lead - Building end-to-end data platforms and AI-powered SaaS solutions with scalable ETL pipelines and distributed processing.</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">{t('nexusSelectedDescription')}</p>
                 <div className="mt-auto flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Data Engineering</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Platforms</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">ETL Pipelines</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('dataEngineering')}</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagAiPlatforms')}</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagEtlPipelines')}</span>
                 </div>
                 <div className="mt-4 flex items-center gap-2 text-xs font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>Visit live site</span>
+                  <span>{t('visitLiveSite')}</span>
                   <span className="material-icons text-sm">open_in_new</span>
                 </div>
               </div>
@@ -221,14 +225,14 @@ export default function HomePage() {
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">SiteBotic</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Dev Lead - SaaS data product: No-code AI chatbot platform with automated data ingestion, vector search, and scalable data processing for enterprise clients.</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">{t('siteboticSelectedDescription')}</p>
                 <div className="mt-auto flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">Data Product</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">SaaS</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">AI Platform</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagDataProduct')}</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagSaas')}</span>
+                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagAiPlatform')}</span>
                 </div>
                 <div className="mt-4 flex items-center gap-2 text-xs font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>Visit live site</span>
+                  <span>{t('visitLiveSite')}</span>
                   <span className="material-icons text-sm">open_in_new</span>
                 </div>
               </div>
@@ -246,9 +250,9 @@ export default function HomePage() {
             <div className="max-w-2xl">
               <div className="flex items-center gap-2 mb-2">
                 <span className="h-px w-8 bg-primary"></span>
-                <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">Capabilities</h2>
+                <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">{t('capabilitiesLabel')}</h2>
               </div>
-              <h3 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white">Core Competencies</h3>
+              <h3 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white">{t('coreCompetenciesHeading')}</h3>
             </div>
             <p className="text-gray-500 font-mono text-xs text-right hidden md:block">
               {/* SYSTEM_MODULES_LOADED<br />
@@ -277,7 +281,7 @@ export default function HomePage() {
                   <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Workflow Orchestration</span>
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> {t('statusActive')}
                 </div>
               </div>
             </div>
@@ -302,7 +306,7 @@ export default function HomePage() {
                   <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Vector Databases</span>
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> {t('statusActive')}
                 </div>
               </div>
             </div>
@@ -327,7 +331,7 @@ export default function HomePage() {
                   <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">User Dashboards</span>
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> {t('statusActive')}
                 </div>
               </div>
             </div>
@@ -352,7 +356,7 @@ export default function HomePage() {
                   <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Production Systems</span>
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> Active
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> {t('statusActive')}
                 </div>
               </div>
             </div>

@@ -5,8 +5,10 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import { useLanguage } from '../../components/LanguageProvider';
 
 export default function CVThankYouPage() {
+  const { t } = useLanguage();
   const router = useRouter();
 
   useEffect(() => {
@@ -36,10 +38,10 @@ export default function CVThankYouPage() {
             <div className="mb-8">
               <span className="material-icons text-6xl text-primary mb-4">check_circle</span>
               <h1 className="text-4xl font-display font-bold text-gray-900 dark:text-white mb-4">
-                Thanks for your interest!
+                {t('cvThanksTitle')}
               </h1>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                I&apos;ve received your request and sent you my CV. You can also download it directly below.
+                {t('cvThanksBody')}
               </p>
             </div>
 
@@ -52,7 +54,7 @@ export default function CVThankYouPage() {
               >
                 <span className="mr-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300">&gt;</span>
                 <span className="material-icons text-xl mr-2">download</span>
-                Download CV
+                {t('downloadCV')}
                 <span className="ml-2 material-icons text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </a>
 
@@ -62,7 +64,7 @@ export default function CVThankYouPage() {
                   className="inline-flex items-center text-primary hover:text-blue-600 font-mono text-sm transition-colors"
                 >
                   <span className="material-icons text-sm mr-1">arrow_back</span>
-                  Back to Home
+                  {t('backToHome')}
                 </Link>
               </div>
             </div>

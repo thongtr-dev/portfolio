@@ -4,8 +4,10 @@ import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { useLanguage } from '../components/LanguageProvider';
 
 export default function ContactPage() {
+  const { t } = useLanguage();
   const [state, handleSubmit] = useForm("mykgzwwg");
   const [formData, setFormData] = useState({
     name: '',
@@ -27,17 +29,17 @@ export default function ContactPage() {
               <div className="mb-8">
                 <span className="material-icons text-6xl text-primary mb-4">check_circle</span>
                 <h1 className="text-4xl font-display font-bold text-gray-900 dark:text-white mb-4">
-                  Message Sent Successfully!
+                  {t('successTitle')}
                 </h1>
                 <p className="text-lg text-gray-600 dark:text-gray-400">
-                  Thank you for reaching out. I&apos;ll get back to you within 24 hours.
+                  {t('successBody')}
                 </p>
               </div>
               <button
                 onClick={() => window.location.reload()}
                 className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white bg-primary hover:bg-blue-600 font-mono transition-all duration-300 shadow-[0_0_10px_rgba(59,130,246,0.2)] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"
               >
-                Send Another Message
+                {t('successSendAnother')}
               </button>
             </div>
           </div>
@@ -74,19 +76,19 @@ export default function ContactPage() {
                 <div className="flex items-center space-x-2 mb-6">
                   <span className="h-px w-8 bg-primary"></span>
                   <span className="text-primary font-mono text-xs font-semibold tracking-wider uppercase">
-                    Initialize Contact
+                    {t('contactInitialize')}
                   </span>
                 </div>
                 
                 <h1 className="text-4xl lg:text-5xl font-display font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                  Let&apos;s build something <br />
+                  {t('contactHeroTitleLine1')} <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-accent">
-                    future-proof.
+                    {t('contactHeroTitleHighlight')}
                   </span>
                 </h1>
                 
                 <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed font-light mb-10">
-                  Data Engineer and Backend Developer at Nexus Tech Global. I specialize in building scalable ETL pipelines, distributed data processing systems, AI-powered platforms, and end-to-end data products using Python, FastAPI, and PostgreSQL. With full-stack experience in React and TypeScript, I create complete solutions from data ingestion to user interfaces. Let&apos;s discuss how we can transform your data challenges into production-ready solutions.
+                  {t('contactHeroDescription')}
                 </p>
                 
                 {/* Contact Methods */}
@@ -100,7 +102,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-[10px] text-gray-500 dark:text-gray-400 font-mono uppercase tracking-wider mb-0.5">
-                        Direct Line
+                        {t('contactDirectLine')}
                       </p>
                       <p className="text-gray-900 dark:text-white font-medium text-lg">
                         contact@thongtruong.com
@@ -116,13 +118,13 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-[10px] text-gray-500 dark:text-gray-400 font-mono uppercase tracking-wider mb-0.5">
-                        Sync Up
+                        {t('contactSyncUp')}
                       </p>
                       <p className="text-gray-900 dark:text-white font-medium text-lg">
-                        Book a 30m slot
+                        {t('contactBookSlot')}
                       </p>
                       <p className="text-[10px] text-gray-400 dark:text-gray-500 font-mono">
-                        Coming Soon
+                        {t('comingSoon')}
                       </p>
                     </div>
                   </div>
@@ -170,7 +172,7 @@ export default function ContactPage() {
                 >
                   <div className="flex justify-between items-center border-b border-gray-200 dark:border-white/5 pb-6">
                     <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white">
-                      Send a Message
+                      {t('contactFormTitle')}
                     </h3>
                     <div className="flex space-x-1">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
@@ -185,7 +187,7 @@ export default function ContactPage() {
                         htmlFor="name"
                         className="block text-xs font-mono font-medium text-gray-600 dark:text-gray-400 mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors"
                       >
-                        Name_
+                        {t('labelName')}
                       </label>
                       <input
                         type="text"
@@ -193,7 +195,7 @@ export default function ContactPage() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Enter your name"
+                        placeholder={t('placeholderName')}
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all"
                         required
                       />
@@ -205,7 +207,7 @@ export default function ContactPage() {
                         htmlFor="email"
                         className="block text-xs font-mono font-medium text-gray-600 dark:text-gray-400 mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors"
                       >
-                        Email_
+                        {t('labelEmail')}
                       </label>
                       <input
                         type="email"
@@ -213,7 +215,7 @@ export default function ContactPage() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="name@domain.com"
+                        placeholder={t('placeholderEmail')}
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all"
                         required
                       />
@@ -226,7 +228,7 @@ export default function ContactPage() {
                       htmlFor="sector"
                       className="block text-xs font-mono font-medium text-gray-600 dark:text-gray-400 mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors"
                     >
-                      Sector_
+                      {t('labelSector')}
                     </label>
                     <div className="relative">
                       <select
@@ -236,12 +238,12 @@ export default function ContactPage() {
                         onChange={handleChange}
                         className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white focus:border-primary focus:ring-0 py-3 px-4 transition-all appearance-none"
                       >
-                        <option>Data Engineering</option>
-                        <option>ETL Pipeline Development</option>
-                        <option>Backend API Development</option>
-                        <option>Data Platform Architecture</option>
-                        <option>Python/FastAPI Consulting</option>
-                        <option>Other</option>
+                        <option>{t('dataEngineering')}</option>
+                        <option>{t('sectorOptionEtl')}</option>
+                        <option>{t('sectorOptionBackend')}</option>
+                        <option>{t('sectorOptionDataPlatform')}</option>
+                        <option>{t('sectorOptionConsulting')}</option>
+                        <option>{t('sectorOptionOther')}</option>
                       </select>
                       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
                         <span className="material-icons text-sm">expand_more</span>
@@ -254,14 +256,14 @@ export default function ContactPage() {
                       htmlFor="message"
                       className="block text-xs font-mono font-medium text-gray-600 dark:text-gray-400 mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors"
                     >
-                      Message_
+                      {t('labelMessage')}
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Describe your project requirements..."
+                      placeholder={t('placeholderMessage')}
                       rows={6}
                       className="block w-full rounded-lg border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-black/40 text-gray-900 dark:text-white placeholder-gray-500 focus:border-primary focus:ring-0 py-3 px-4 transition-all resize-none"
                       required
@@ -275,7 +277,7 @@ export default function ContactPage() {
                     className="w-full group flex items-center justify-center py-4 px-4 border border-transparent rounded-lg shadow-lg shadow-primary/20 text-sm font-mono font-bold text-white bg-primary hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all uppercase tracking-wide overflow-hidden relative disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <span className="absolute w-full h-full bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-out skew-x-12"></span>
-                    <span className="mr-2">{state.submitting ? 'Sending...' : 'Send Transmission'}</span>
+                    <span className="mr-2">{state.submitting ? t('buttonSending') : t('buttonSendTransmission')}</span>
                     <span className="material-icons text-lg group-hover:translate-x-1 transition-transform">
                       {state.submitting ? 'hourglass_empty' : 'send'}
                     </span>

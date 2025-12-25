@@ -1,6 +1,10 @@
+'use client';
+
 import Link from "next/link";
+import { useLanguage } from "./LanguageProvider";
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-background-dark text-white pt-20 pb-10 border-t border-gray-800 relative overflow-hidden">
       <div
@@ -24,11 +28,10 @@ export default function Footer() {
             </div>
 
             <h3 className="text-2xl font-bold mb-4 font-display">
-              Initialize collaboration?
+              {t('initializeCollaboration')}
             </h3>
             <p className="text-gray-400 max-w-sm mb-8 font-light text-sm">
-              Available for freelance projects and open to full-time
-              opportunities.
+              {t('availableForFreelance')}
             </p>
 
             <div className="flex gap-4">
@@ -53,7 +56,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-sm font-bold font-mono mb-6 text-primary uppercase tracking-widest">
-              {/* Sitemap */}
+              {t('sitemap')}
             </h4>
             <ul className="space-y-3 text-gray-400 font-mono text-xs">
               <li>
@@ -61,7 +64,7 @@ export default function Footer() {
                   href="/"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> ./home
+                  <span className="text-primary">&gt;</span> {t('home')}
                 </Link>
               </li>
               <li>
@@ -69,7 +72,7 @@ export default function Footer() {
                   href="/projects"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> ./projects
+                  <span className="text-primary">&gt;</span> {t('projects')}
                 </Link>
               </li>
               <li>
@@ -77,7 +80,7 @@ export default function Footer() {
                   href="/cv"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> ./cv
+                  <span className="text-primary">&gt;</span> {t('cv')}
                 </Link>
               </li>
               <li>
@@ -85,7 +88,7 @@ export default function Footer() {
                   href="/contact"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> ./contact
+                  <span className="text-primary">&gt;</span> {t('contact')}
                 </Link>
               </li>
             </ul>
@@ -93,7 +96,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-sm font-bold font-mono mb-6 text-primary uppercase tracking-widest">
-              {/* Contact_Info */}
+              {t('contactInfo')}
             </h4>
             <ul className="space-y-4 text-gray-400 text-sm">
               <li className="flex items-start gap-3 group cursor-pointer">
@@ -111,7 +114,7 @@ export default function Footer() {
                 <span className="material-icons text-primary text-sm mt-1">
                   place
                 </span>
-                <span className="font-mono text-xs">Ho Chi Minh City, VN</span>
+                <span className="font-mono text-xs">{t('location')}</span>
               </li>
             </ul>
           </div>
@@ -119,12 +122,10 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 font-mono">
           <p>
-            © {new Date().getFullYear()} Thong Truong.
-            System_All_Rights_Reserved.
+            © {new Date().getFullYear()} Thong Truong. {t('systemRightsReserved')}
           </p>
           <p>
-            Executed with <span className="text-primary">Logic</span> &amp;{" "}
-            <span className="text-primary">Caffeine</span>
+            {t('executedWith')}
           </p>
         </div>
       </div>
