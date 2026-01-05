@@ -143,8 +143,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'Nexus Tech Globalでは、共同創業者であり開発リード兼プロダクトオーナーとして多くの役割を兼務しました。プロダクトのビジョンを定義し、ユーザーストーリーを作成し、バックログの優先順位を決め、開発リードとして主要機能の実装も行い、4人のクロスファンクショナルチームを調整して本番運用のSaaSチャットボットプラットフォームを提供しました。ステークホルダーの要望、技術的制約、リリーススケジュールのバランスを取りながら、迅速に価値ある機能を提供しました。'
     },
     professionalGrowthContent3: {
-      en: 'These experiences taught me how to make pragmatic trade-offs, communicate clearly with both engineers and business stakeholders, and use data to validate product decisions. My background in humanities and technology helps me bridge cultural and technical gaps when working with international teams.',
-      ja: 'これらの経験から、実用的なトレードオフの判断、エンジニアとビジネスの両方の関係者への明確なコミュニケーション、製品意思決定の検証にデータを用いる方法を学びました。人文系と技術のバックグラウンドは、国際チームでの文化的・技術的ギャップを埋めるのに役立ちます。'
+      en: 'My interest in moving into the Product Management space comes primarily from my experience building the startup SiteBotic. That was the first time I managed not only technical implementation, but also task planning, team coordination, and stakeholder communication—balancing trade-offs and delivering product versions iteratively until reaching a stable release. This process genuinely excited me in a way I hadn\'t experienced before, which is why I want to further pursue the PM path. These experiences taught me how to make pragmatic trade-offs, communicate clearly with both engineers and business stakeholders, and use data to validate product decisions. My background in humanities and technology helps me bridge cultural and technical gaps when working with international teams.',
+      ja: 'プロダクトマネジメントの分野に移行したいという私の興味は、主にスタートアップSiteBoticを構築した経験から来ています。それは、技術的な実装だけでなく、タスク計画、チーム調整、ステークホルダーコミュニケーションを管理した初めての機会でした—トレードオフのバランスを取り、安定したリリースに達するまでプロダクトバージョンを反復的に提供しました。このプロセスは、私がこれまで経験したことのない方法で私を本当に興奮させました。それが、PMの道をさらに追求したい理由です。これらの経験から、実用的なトレードオフの判断、エンジニアとビジネスの両方の関係者への明確なコミュニケーション、製品意思決定の検証にデータを用いる方法を学びました。人文系と技術のバックグラウンドは、国際チームでの文化的・技術的ギャップを埋めるのに役立ちます。'
     },
 
     // Future Goals Section
