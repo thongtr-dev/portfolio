@@ -160,7 +160,7 @@ export default function HomePage() {
       {/* Selected Projects Preview */}
       <section className="py-24 bg-surface-light dark:bg-surface-dark relative border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+          <div className="mb-8 flex items-center justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-2">{t('selectedWorksHeading')}</h2>
               <p className="text-gray-600 dark:text-gray-400 font-mono text-sm">{/* Executed_Projects_List */}</p>
@@ -172,71 +172,85 @@ export default function HomePage() {
               {t('viewAllProjects')} <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </Link>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <Link 
-              href="https://nexustechglobal.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full cursor-pointer"
-            >
-              <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
-                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10"></div>
-                <Image
-                  src="/nexus-tech-global-thumbnail.png"
-                  alt="Nexus Tech Global"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                />
+            <div>
+              <h4 className="text-xl font-bold mb-4">{t('productLeadershipHeading')}</h4>
+              <div className="grid grid-cols-1 gap-6">
+                <Link href="https://nexustechglobal.com" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
+                    <Image
+                      src="/nexus-tech-global-thumbnail.png"
+                      alt="Nexus Tech Global"
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h5 className="font-display font-bold text-lg">Nexus Tech Global</h5>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('nexusSelectedDescription')}</p>
+                  </div>
+                </Link>
+
+                <Link href="https://sitebotic.com" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
+                    <Image
+                      src="/sitebotic-thumbnail.png"
+                      alt="SiteBotic AI Chatbot Platform"
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h5 className="font-display font-bold text-lg">SiteBotic</h5>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('siteboticSelectedDescription')}</p>
+                  </div>
+                </Link>
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Nexus Tech Global</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">{t('nexusSelectedDescription')}</p>
-                <div className="mt-auto flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('dataEngineering')}</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagAiPlatforms')}</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagEtlPipelines')}</span>
-                </div>
-                <div className="mt-4 flex items-center gap-2 text-xs font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>{t('visitLiveSite')}</span>
-                  <span className="material-icons text-sm">open_in_new</span>
-                </div>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-bold mb-4">{t('handsOnTechnicalHeading')}</h4>
+              <div className="grid grid-cols-1 gap-6">
+                <Link href="/projects" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
+                    <Image
+                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+                      alt="Customer 360"
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h5 className="font-display font-bold text-lg">Customer 360 (University Project)</h5>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectCustomer360Description')}</p>
+                  </div>
+                </Link>
+
+                <Link href="/projects" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
+                    <Image
+                      src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800"
+                      alt="Book Recommendation System"
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h5 className="font-display font-bold text-lg">Book Recommendation System</h5>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectBookRecDescription')}</p>
+                  </div>
+                </Link>
               </div>
-            </Link>
-            
-            <Link 
-              href="https://sitebotic.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative bg-background-light dark:bg-background-dark rounded border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition duration-300 flex flex-col h-full cursor-pointer"
-            >
-              <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">Production</div>
-                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10"></div>
-                <Image
-                  src="/sitebotic-thumbnail.png"
-                  alt="SiteBotic AI Chatbot Platform"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                />
-              </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">SiteBotic</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">{t('siteboticSelectedDescription')}</p>
-                <div className="mt-auto flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagDataProduct')}</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagSaas')}</span>
-                  <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-gray-200 dark:border-gray-700 rounded-sm uppercase">{t('tagAiPlatform')}</span>
-                </div>
-                <div className="mt-4 flex items-center gap-2 text-xs font-mono text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>{t('visitLiveSite')}</span>
-                  <span className="material-icons text-sm">open_in_new</span>
-                </div>
-              </div>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -262,102 +276,42 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
-              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden transition-colors">
-                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition transform group-hover:scale-110">
-                  <span className="material-icons text-8xl text-primary">dns</span>
-                </div>
+              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden">
                 <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary mb-6 rounded border border-primary/20">
-                  <span className="material-icons text-2xl">dns</span>
+                  <span className="material-icons text-2xl">insights</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Data Pipelines & ETL</h3>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Apache Spark</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Apache Airflow</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">ETL/ELT</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Batch Processing</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Streaming Data</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Apache Kafka</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Data Quality</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-mono rounded border border-primary/20">Workflow Orchestration</span>
-                </div>
-                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> {t('statusActive')}
-                </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">{t('pmCardTitle1')}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('pmCardDesc1')}</p>
               </div>
             </div>
-            
+
             <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
-              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden transition-colors">
-                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition transform group-hover:scale-110">
-                  <span className="material-icons text-8xl text-primary">web</span>
-                </div>
+              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden">
                 <div className="w-12 h-12 bg-accent/10 flex items-center justify-center text-accent mb-6 rounded border border-accent/20">
-                  <span className="material-icons text-2xl">web</span>
+                  <span className="material-icons text-2xl">event</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Data Storage & APIs</h3>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">PostgreSQL</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">pgvector</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">SQL</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">FastAPI</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Redis</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Data Modeling</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">REST APIs</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs font-mono rounded border border-accent/20">Vector Databases</span>
-                </div>
-                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> {t('statusActive')}
-                </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">{t('pmCardTitle2')}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('pmCardDesc2')}</p>
               </div>
             </div>
-            
+
             <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
-              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden transition-colors">
-                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition transform group-hover:scale-110">
-                  <span className="material-icons text-8xl text-primary">analytics</span>
-                </div>
+              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden">
                 <div className="w-12 h-12 bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 rounded border border-blue-500/20">
-                  <span className="material-icons text-2xl">analytics</span>
+                  <span className="material-icons text-2xl">language</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Data Products & Analytics</h3>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Data Products</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">SaaS Platforms</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Metabase</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Business Intelligence</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Data Visualization</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">ML Applications</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">Analytics Platforms</span>
-                  <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs font-mono rounded border border-blue-500/20">User Dashboards</span>
-                </div>
-                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> {t('statusActive')}
-                </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">{t('pmCardTitle3')}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('pmCardDesc3')}</p>
               </div>
             </div>
-            
+
             <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
-              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden transition-colors">
-                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition transform group-hover:scale-110">
-                  <span className="material-icons text-8xl text-primary">build</span>
-                </div>
+              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden">
                 <div className="w-12 h-12 bg-green-500/10 flex items-center justify-center text-green-500 mb-6 rounded border border-green-500/20">
-                  <span className="material-icons text-2xl">build</span>
+                  <span className="material-icons text-2xl">groups</span>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-4">Infrastructure & DevOps</h3>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Docker</span>
-                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">CI/CD</span>
-                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">GitHub Actions</span>
-                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">AWS EKS</span>
-                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Containerization</span>
-                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Monitoring</span>
-                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Deployment</span>
-                  <span className="px-2 py-1 bg-green-500/10 text-green-500 text-xs font-mono rounded border border-green-500/20">Production Systems</span>
-                </div>
-                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex items-center gap-2 text-xs font-mono text-gray-500">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> {t('statusActive')}
-                </div>
+                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">{t('pmCardTitle4')}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('pmCardDesc4')}</p>
               </div>
             </div>
           </div>

@@ -25,36 +25,28 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - Data Engineer & Full-Stack Developer',
+  title: 'Thong Truong - Project Manager & Product Owner (Bridge Engineer, Japanese)',
   description:
-    'Data Engineer and Backend Developer specializing in Python, FastAPI, SQL, and PostgreSQL. Building scalable ETL pipelines, distributed data processing, AI-powered systems, and end-to-end data products. Full-stack experience with React, TypeScript, and Next.js.',
+    'Project Manager and Product Owner experienced in coordinating engineering teams and Japanese stakeholders. I define product roadmaps, manage delivery, translate technical requirements between English and Japanese, and help teams deliver reliable software and AI products.',
   keywords: [
-    'Data Engineer',
-    'Backend Engineer',
-    'Python Developer',
-    'FastAPI Developer',
-    'PostgreSQL',
-    'Apache Spark',
-    'Apache Airflow',
-    'ETL Pipelines',
-    'Data Pipelines',
-    'SQL',
-    'Distributed Systems',
-    'Apache Kafka',
-    'Data Products',
-    'SaaS Platforms',
-    'React Developer',
-    'TypeScript',
-    'Next.js',
-    'Full Stack Developer',
+    'Project Manager',
+    'Product Owner',
+    'Bridge Engineer',
+    'Japanese',
+    'Product Strategy',
+    'Project Delivery',
+    'Stakeholder Management',
+    'SaaS',
+    'AI',
+    'Software Development',
     'Thong Truong'
   ],
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - Data Engineer & Full-Stack Developer',
+    title: 'Thong Truong - Project Manager & Product Owner (Bridge Engineer, Japanese)',
     description:
-      'Data Engineer and Backend Developer specializing in Python, FastAPI, SQL, and PostgreSQL. Building scalable ETL pipelines, distributed data processing, and end-to-end data products. Full-stack experience with React, TypeScript, and Next.js.',
+      'Project Manager and Product Owner experienced in coordinating engineering teams and Japanese stakeholders. I define product roadmaps, manage delivery, translate technical requirements between English and Japanese, and help teams deliver reliable software and AI products.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     locale: 'en_US',
@@ -80,35 +72,29 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Thong Truong",
-              "jobTitle": "Data Engineer & Backend Developer",
-              "description": "Data Engineer specializing in Python, FastAPI, SQL, PostgreSQL, ETL pipelines, and distributed data processing",
+              "jobTitle": "Project Manager & Product Owner",
+              "description": "Project Manager and Product Owner who coordinates engineering teams, translates technical requirements between English and Japanese, and drives product delivery",
               "url": "https://thongtruong.com",
               "sameAs": [
                 "https://github.com/thongtr-dev",
                 "https://www.linkedin.com/in/thongtr/"
               ],
-              "knowsAbout": [
-                "Data Engineering",
-                "ETL Pipelines",
-                "Python",
-                "FastAPI",
-                "PostgreSQL",
-                "Apache Spark",
-                "Apache Airflow",
-                "Apache Kafka",
-                "SQL",
-                "Distributed Systems",
-                "Data Products",
-                "SaaS Development",
-                "React",
-                "TypeScript",
-                "Next.js",
-                "Full Stack Development"
+                "knowsAbout": [
+                "Project Management",
+                "Product Strategy",
+                "Stakeholder Management",
+                "Roadmapping",
+                "Delivery Management",
+                "Japanese Communication",
+                "Bridge Engineering",
+                "SaaS",
+                "AI",
+                "Software Development"
               ],
               "hasOccupation": {
                 "@type": "Occupation",
-                "name": "Data Engineer",
-                "occupationalCategory": "Data Engineer"
+                "name": "Project Manager",
+                "occupationalCategory": "Project Management"
               }
             })
           }}

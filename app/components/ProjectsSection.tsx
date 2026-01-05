@@ -23,9 +23,9 @@ export default function ProjectsSection() {
 								<div className="space-y-6">
 									<div>
 										<h3 className="text-2xl font-bold mb-4">SiteBotic - AI-Powered Chatbot Platform</h3>
-										<p className="text-sm text-purple-400 mb-2 italic">Founder & Technical Lead | Production SaaS Platform</p>
+										<p className="text-sm text-purple-400 mb-2 italic">Founder & Product Manager | Production SaaS Platform</p>
 										<p className="text-gray-400">
-											Production SaaS platform with automated data ingestion pipelines. Built end-to-end data infrastructure for AI-powered chatbots.
+											Product-led SaaS platform delivered to enterprise customers. Led product strategy, coordinated engineering and UX, and managed releases for a no-code AI chatbot platform.
 										</p>
 										<div className="flex gap-4 mt-3">
 											<a href="https://sitebotic.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
@@ -152,8 +152,8 @@ export default function ProjectsSection() {
 											<h3 className="text-2xl font-bold mb-4">Customer 360 Risk Scoring System</h3>
 											<p className="text-sm text-purple-400 mb-2 italic">Data Engineering Project | University Assignment</p>
 											<p className="text-gray-400">
-												End-to-end data engineering solution building Customer 360 views and risk analytics with ETL pipelines and distributed processing.
-											</p>
+													End-to-end data engineering solution building Customer 360 views and risk analytics with ETL pipelines and distributed processing.
+												</p>
 											<a href="https://github.com/23210287thongtruong/customer360-risk" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors">
 												View on GitHub →
 											</a>

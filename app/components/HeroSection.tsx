@@ -22,7 +22,7 @@ export default function HeroSection() {
             <h1 className="text-4xl leading-normal md:leading-relaxed md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
               Thong Truong
             </h1>
-            <h2 className="text-2xl md:text-4xl font-bold text-white">Data Engineer & Backend Developer</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-white">Project Manager & Product Owner</h2>
             
             {/* Contact Bar - Compact & Scannable */}
             <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm md:text-base text-gray-400 py-3">
@@ -57,24 +57,19 @@ export default function HeroSection() {
             </div>
 
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-              Data Engineer with strong backend engineering foundation, building scalable ETL pipelines, distributed data processing, AI-powered platforms, and end-to-end data products using Python, SQL, and modern data technologies. Full-stack experience with React, TypeScript, and Next.js for complete data-driven solutions.
+              Project Manager and Product Owner who bridges engineering and Japanese stakeholders. I coordinate cross-functional teams, define roadmaps, translate technical requirements between English and Japanese, and drive delivery for SaaS and AI products.
             </p>
           </div>
             <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/20 rounded-full text-yellow-300 text-xs md:text-sm border border-yellow-500/30">Python</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-600/20 rounded-full text-purple-300 text-xs md:text-sm border border-purple-500/30">FastAPI</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/20 rounded-full text-blue-300 text-xs md:text-sm border border-blue-500/30">PostgreSQL</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-orange-600/20 rounded-full text-orange-300 text-xs md:text-sm border border-orange-500/30">Apache Spark</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-600/20 rounded-full text-red-300 text-xs md:text-sm border border-red-500/30">Apache Airflow</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-lime-500/20 rounded-full text-lime-300 text-xs md:text-sm border border-lime-500/30">Apache Kafka</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-600/20 rounded-full text-teal-300 text-xs md:text-sm border border-teal-500/30">SQL</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/20 rounded-full text-red-300 text-xs md:text-sm border border-red-500/30">Redis</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-indigo-600/20 rounded-full text-indigo-300 text-xs md:text-sm border border-indigo-500/30">pgvector</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-pink-500/20 rounded-full text-pink-300 text-xs md:text-sm border border-pink-500/30">Dramatiq</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-emerald-500/20 rounded-full text-emerald-300 text-xs md:text-sm border border-emerald-500/30">Docker</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-slate-500/20 rounded-full text-slate-300 text-xs md:text-sm border border-slate-500/30">Metabase</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-cyan-500/20 rounded-full text-cyan-300 text-xs md:text-sm border border-cyan-500/30">React</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-600/20 rounded-full text-blue-300 text-xs md:text-sm border border-blue-500/30">TypeScript</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/20 rounded-full text-yellow-300 text-xs md:text-sm border border-yellow-500/30">Product Strategy</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-600/20 rounded-full text-purple-300 text-xs md:text-sm border border-purple-500/30">Roadmapping</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/20 rounded-full text-blue-300 text-xs md:text-sm border border-blue-500/30">Stakeholder Mgmt</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-orange-600/20 rounded-full text-orange-300 text-xs md:text-sm border border-orange-500/30">Engineering Coordination</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-600/20 rounded-full text-red-300 text-xs md:text-sm border border-red-500/30">Japanese (Business)</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-lime-500/20 rounded-full text-lime-300 text-xs md:text-sm border border-lime-500/30">Delivery Management</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-600/20 rounded-full text-teal-300 text-xs md:text-sm border border-teal-500/30">SaaS / AI</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-indigo-600/20 rounded-full text-indigo-300 text-xs md:text-sm border border-indigo-500/30">UX Collaboration</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-emerald-500/20 rounded-full text-emerald-300 text-xs md:text-sm border border-emerald-500/30">Product Ops</span>
             </div>
         </motion.div>
 

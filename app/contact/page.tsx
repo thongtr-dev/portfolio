@@ -9,12 +9,12 @@ import { useLanguage } from '../components/LanguageProvider';
 export default function ContactPage() {
   const { t } = useLanguage();
   const [state, handleSubmit] = useForm("mykgzwwg");
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState(() => ({
     name: '',
     email: '',
-    sector: 'Data Engineering',
+    sector: t('dataEngineering'),
     message: ''
-  });
+  }));
 
   if (state.succeeded) {
     return (

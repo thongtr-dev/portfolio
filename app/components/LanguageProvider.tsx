@@ -57,21 +57,21 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     cv: { en: './cv', ja: './履歴書' },
     contact: { en: './contact', ja: './連絡先' },
 
-    // Hero Section
-    founderEngineer: { en: 'Founder & Data Engineer', ja: '創業者 & データエンジニア' },
+    // Hero Section (project/product/bridge-focused)
+    founderEngineer: { en: 'Founder & Project Manager', ja: '創業者 & プロジェクトマネージャー' },
     building: { en: 'Building', ja: '構築' },
-    dataDriven: { en: 'Data-Driven', ja: 'データ駆動型' },
+    dataDriven: { en: 'Outcome-Focused', ja: '成果重視' },
     solutionsAt: { en: 'Solutions at', ja: 'ソリューション' },
     scale: { en: 'Scale', ja: 'スケール' },
     heroBio: {
-      en: "I'm Thong, Data Engineer and Backend Developer at Nexus Tech Global and Dev Lead for SiteBotic. I build scalable ETL pipelines, distributed data processing systems, AI-powered platforms, and end-to-end data products using Python, FastAPI, SQL, and PostgreSQL. With full-stack experience in React and TypeScript, I create complete solutions from data ingestion to user interfaces.",
-      ja: 'Thongです。Nexus Tech Globalでデータエンジニア兼バックエンドエンジニアを務め、SiteBoticでは開発リードを担当しています。Python、FastAPI、SQL、PostgreSQLを用いて、スケーラブルなETLパイプライン、分散データ処理システム、AIプラットフォーム、エンドツーエンドのデータプロダクトを構築しています。ReactとTypeScriptによるフルスタック開発の経験もあり、データの取り込みからユーザーインターフェースまで一貫したソリューションを提供しています。'
+      en: "I'm Thong — Project Manager & Product Owner who bridges engineering and Japanese stakeholders. I coordinate cross-functional teams, define product roadmaps, manage delivery, and translate technical requirements between English and Japanese. With hands-on software experience, I ensure engineering and business align to deliver reliable products.",
+      ja: 'Thongです。プロジェクトマネージャー兼プロダクトオーナーとして、エンジニアリングチームと日本のステークホルダーの橋渡しをします。クロスファンクショナルなチームを調整し、プロダクトロードマップを定義し、成果物の納品管理を行い、英語と日本語の間で技術的要件を翻訳します。ソフトウェア開発の実務経験があるため、技術チームとビジネスの連携を確実にし、信頼できるプロダクトを提供します。'
     },
     viewProjects: { en: 'View_Projects', ja: 'プロジェクトを見る' },
     downloadCV: { en: 'Download CV', ja: '履歴書ダウンロード' },
-    dataEngineering: { en: 'Data Engineering', ja: 'データエンジニアリング' },
-    aiMlIntegration: { en: 'AI/ML Integration', ja: 'AI/ML統合' },
-    fullStack: { en: 'Full Stack', ja: 'フルスタック' },
+    dataEngineering: { en: 'Project Management', ja: 'プロジェクト管理' },
+    aiMlIntegration: { en: 'Product Ownership', ja: 'プロダクトオーナーシップ' },
+    fullStack: { en: 'Bridge Engineer (Japanese)', ja: 'ブリッジエンジニア（日本語）' },
 
     // About Page
     beforeDownloadCV: { en: 'Before You Download My CV', ja: '履歴書をダウンロードする前に' },
@@ -120,8 +120,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
 
     // About Page - Japanese Ability Note (final section)
     japaneseAbilityNote: {
-      en: "Although I have fully transitioned into tech and haven't actively used Japanese in my professional work, I still retain reading and listening comprehension. My spoken Japanese, however, is much rustier than it was during university. To use Japanese confidently again in a professional business context, I would need an environment where I can use it every day. If you understand this starting point and still choose to work with me, I will treat it as a serious commitment: give me around six months in a Japanese-speaking environment and I'm confident I can regain JLPT N2 level and become a strong bridge between technical work and Japanese communication.",
-      ja: '現在は完全にIT分野にキャリアを移しており、日本語を仕事で本格的に使う機会はほとんどありませんでしたが、読む・聞く力は今でもある程度維持しています。一方で、大学時代と比べると日本語をスムーズに話す力はかなり錆びついてしまったと感じています。ビジネスの場で自信を持って日本語を使うためには、日常的に日本語を使える環境がもう一度必要だと思っています。それでもなお私と一緒に働きたいと考えてくださるのであれば、必ずお応えします。日本語を使う環境をいただければ、半年ほどでJLPT N2レベルを取り戻し、技術と日本語の両面で貢献できる人材になれると自信を持っています。'
+      en: "I retain strong reading and listening comprehension in Japanese. My spoken Japanese is currently rusty and would benefit from regular use. I'm comfortable supporting written translation, documentation review, and stakeholder coordination between English and Japanese. With daily practice or immersion (roughly six months), I can regain business-level spoken fluency and serve effectively as a bridge between technical teams and Japanese stakeholders.",
+      ja: '読む・聞く力は比較的保たれていますが、話す力は現在錆びついており、定期的な運用で回復が必要です。書面での翻訳、ドキュメント確認、関係者間の調整などの業務サポートには対応可能です。日常的に日本語を使う環境（概ね半年程度）をいただければ、ビジネスレベルの会話力を取り戻し、技術チームと日本側の橋渡しとして効果的に貢献できるようになります。'
     },
     selfTaughtContent4: {
       en: 'When COVID hit Vietnam severely, I was forced to stay home. During this time, I dedicated myself to learning SEO and WordPress. I tried my hand at affiliate marketing and Amazon dropshipping, though I quickly learned it wasn\'t as easy as it seemed.',
@@ -133,18 +133,18 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     },
 
     // Professional Growth Section
-    professionalGrowthTitle: { en: 'From Freelance to Full-Time: Building a Career in Tech', ja: 'フリーランスからフルタイムへ：テクノロジーでのキャリア構築' },
+    professionalGrowthTitle: { en: 'From Freelance to Product Leadership', ja: 'フリーランスからプロダクトリーダーへ' },
     professionalGrowthContent1: {
-      en: 'My freelance WordPress development work opened doors to more opportunities in the tech industry. I progressed through various roles, from WordPress development to full-stack development, before specializing in backend development, data engineering, and scalable systems. Through self-study and hands-on projects, I built expertise in Python, FastAPI, SQL, PostgreSQL, and data pipeline technologies.',
-      ja: '私のフリーランスWordPress開発の仕事が、テクノロジー業界でのより多くの機会への扉を開きました。WordPress開発からフルスタック開発へと様々な役割を経験し、最終的にバックエンド開発、データエンジニアリング、スケーラブルシステムに特化しました。自学と実践的なプロジェクトを通じて、Python、FastAPI、SQL、PostgreSQL、データパイプライン技術の専門知識を構築しました。'
+      en: 'My freelance WordPress work opened doors into product and delivery roles. Over time I moved from implementation to coordinating teams, clarifying requirements, and ensuring releases met business goals. This hands-on progression gave me both technical credibility and a practical understanding of product delivery.',
+      ja: 'フリーランスでのWordPress業務が、プロダクトとデリバリーの役割への扉を開きました。実装からチームの調整、要件の明確化、リリースがビジネス目標を満たすことの保証へと役割が変化しました。この実務を通じて、技術的信頼性とプロダクトデリバリーに関する実践的な理解を得ました。'
     },
     professionalGrowthContent2: {
-      en: 'As Founder & Technical Lead at Nexus Tech Global, I designed and built SiteBotic (app.sitebotic.com), an AI-powered SaaS platform that transforms website data into intelligent chatbots. I architected the entire data infrastructure, from scalable ingestion systems to robust storage solutions, ensuring the platform can handle real-world production demands while delivering reliable AI-driven conversations.',
-      ja: 'Nexus Tech Globalの創業者兼テクニカルリードとして、SiteBotic（app.sitebotic.com）を設計・構築しました。これはウェブサイトデータをインテリジェントなチャットボットに変換するAI搭載SaaSプラットフォームです。スケーラブルな取り込みシステムから堅牢なストレージソリューションまで、プラットフォームが現実世界の生産需要を処理し、信頼できるAI駆動の会話を提供することを保証するデータインフラ全体を設計しました。'
+      en: 'At Nexus Tech Global I served as Associate Founder, Dev Lead, and Product Owner — I wore many hats. I defined the product vision, wrote user stories, prioritized the backlog, implemented key features as dev lead, and coordinated a cross-functional team of four to deliver a production SaaS chatbot platform. I balanced stakeholder needs, technical constraints, and release timelines to ship usable features quickly.',
+      ja: 'Nexus Tech Globalでは、共同創業者であり開発リード兼プロダクトオーナーとして多くの役割を兼務しました。プロダクトのビジョンを定義し、ユーザーストーリーを作成し、バックログの優先順位を決め、開発リードとして主要機能の実装も行い、4人のクロスファンクショナルチームを調整して本番運用のSaaSチャットボットプラットフォームを提供しました。ステークホルダーの要望、技術的制約、リリーススケジュールのバランスを取りながら、迅速に価値ある機能を提供しました。'
     },
     professionalGrowthContent3: {
-      en: 'Throughout this journey, I\'ve learned that the best developers are those who never stop learning, who embrace challenges, and who understand that technology is a tool for solving human problems. My diverse background - from humanities to hardcore programming - gives me a unique perspective on how to approach complex problems.',
-      ja: 'この旅を通じて、最良の開発者は決して学習を止めず、挑戦を受け入れ、テクノロジーが人間の問題を解決するためのツールであることを理解する人々であることを学びました。人文科学からハードコアプログラミングまでの多様な背景が、複雑な問題に取り組む独自の視点を提供します。'
+      en: 'These experiences taught me how to make pragmatic trade-offs, communicate clearly with both engineers and business stakeholders, and use data to validate product decisions. My background in humanities and technology helps me bridge cultural and technical gaps when working with international teams.',
+      ja: 'これらの経験から、実用的なトレードオフの判断、エンジニアとビジネスの両方の関係者への明確なコミュニケーション、製品意思決定の検証にデータを用いる方法を学びました。人文系と技術のバックグラウンドは、国際チームでの文化的・技術的ギャップを埋めるのに役立ちます。'
     },
 
     // Future Goals Section
@@ -154,12 +154,12 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: '現在、UIT（情報技術大学）で情報技術の第二学士号の最終段階にいます。これはUSSHと同じベトナム国家大学ホーチミン市システムの一部です。すべてのコースワークを完了し、「Very Good」の学位分類を達成し、現在2026年6月に公式の成績証明書と学士号証明書を待っています。'
     },
     futureGoalsContent2: {
-      en: 'This academic pursuit represents the completion of my journey - bridging the gap between self-taught practical knowledge and formal theoretical understanding. With two bachelor\'s degrees (Japanese Studies and Information Technology), I offer a unique blend of cultural awareness and technical expertise that could be particularly valuable for international projects or Japanese market opportunities.',
-      ja: 'この学問的追求は、私の旅の完成を表しています - 自学の実践的な知識と正式な理論的理解の間のギャップを埋めるものです。二つの学士号（日本語学科と情報技術）を持つことで、文化的な意識と技術的な専門知識のユニークな組み合わせを提供し、特に国際プロジェクトや日本市場の機会において価値があるかもしれません。'
+      en: 'Completing my IT degree complements my product experience by strengthening my technical literacy. With dual degrees in Japanese Studies and Information Technology, I can both coordinate technical teams and communicate effectively with Japanese stakeholders — a valuable combination for international product delivery.',
+      ja: 'ITの学位を修了することで、プロダクト経験に技術的理解が補完されます。日本語学と情報技術の二つの学位により、技術チームを調整し、日本の関係者と効果的にコミュニケーションを取ることができ、国際的なプロダクトデリバリーにおいて価値のある組み合わせを提供します。'
     },
     futureGoalsContent3: {
-      en: 'My story is one of passion, perseverance, and the transformative power of learning. Whether you\'re a potential employer, collaborator, or fellow developer, I hope this gives you insight into what drives me and how I approach challenges. From a disinterested high school student with Pascal to a passionate developer - the journey continues.',
-      ja: '私の物語は情熱、忍耐、学習の変革力の物語です。潜在的な雇用主、コラボレーター、または仲間の開発者であるかどうかにかかわらず、これが私を駆り立てるものと挑戦にどのように取り組むかを洞察してくれることを願っています。パスカルに興味のない高校生から情熱的な開発者へ - 旅は続きます。'
+      en: 'I aim to transition into full-time product or project leadership roles where I can apply my technical background, bilingual communication, and hands-on delivery experience to help teams ship valuable software. I am particularly interested in roles that require coordinating between Japanese stakeholders and engineering teams.',
+      ja: '私は技術的背景、バイリンガルのコミュニケーション能力、実践的なデリバリー経験を活かして、プロダクトまたはプロジェクトのフルタイムのリーダーシップ職に移行することを目指しています。特に日本の関係者とエンジニアリングチームの間を調整する役割に興味があります。'
     },
 
     // Call to Action
@@ -168,7 +168,7 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
 
     // Footer
     initializeCollaboration: { en: 'Initialize collaboration?', ja: 'コラボレーションを開始しますか？' },
-    availableForFreelance: { en: 'Available for freelance projects and open to full-time opportunities.', ja: 'フリーランスプロジェクトに対応可能、フルタイムの機会にもオープンです。' },
+    availableForFreelance: { en: 'Available for product/project leadership roles, freelance PM/PO work, and open to full-time opportunities.', ja: 'プロダクト/プロジェクトのリーダーシップ、フリーランスのPM/PO業務に対応可能で、フルタイムの機会にもオープンです。' },
     sitemap: { en: 'Sitemap', ja: 'サイトマップ' },
     contactInfo: { en: 'Contact_Info', ja: '連絡先情報' },
     location: { en: 'Ho Chi Minh City, VN', ja: 'ホーチミン市、ベトナム' },
@@ -177,15 +177,17 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
 
     // Home - Selected Works
     selectedWorksHeading: { en: 'Selected Works', ja: '選抜プロジェクト' },
+    productLeadershipHeading: { en: 'Product Leadership', ja: 'プロダクトリーダーシップ' },
+    handsOnTechnicalHeading: { en: 'Hands‑On Technical', ja: '実務（ハンズオン）' },
     viewAllProjects: { en: 'view_all_projects()', ja: 'view_all_projects()' },
     productionBadge: { en: 'Production', ja: '本番環境' },
     nexusSelectedDescription: {
-      en: 'Founder & Technical Lead - Building end-to-end data platforms and AI-powered SaaS solutions with scalable ETL pipelines and distributed processing.',
-      ja: '創業者兼テクニカルリードとして、スケーラブルなETLパイプラインと分散処理を備えたエンドツーエンドのデータプラットフォームおよびAI搭載SaaSソリューションを構築。'
+      en: 'Founder & Product Manager - Leading product strategy, stakeholder communication, and delivery for AI-driven SaaS solutions.',
+      ja: '創業者兼プロダクトマネージャーとして、AI搭載SaaSソリューションのプロダクト戦略、ステークホルダーコミュニケーション、デリバリーを主導。'
     },
     siteboticSelectedDescription: {
-      en: 'Dev Lead - SaaS data product: No-code AI chatbot platform with automated data ingestion, vector search, and scalable data processing for enterprise clients.',
-      ja: '開発リードとして、データ自動取り込み、ベクトル検索、スケーラブルなデータ処理を備えたノーコードAIチャットボットSaaSデータプロダクトをエンタープライズ向けに構築。'
+      en: 'Associate Founder & Product Owner — led product development and delivery for SiteBotic, a no-code AI chatbot SaaS.',
+      ja: '共同創業者・プロダクトオーナー — ノーコードAIチャットボットSaaS「SiteBotic」の開発とデリバリーを主導。'
     },
     tagAiPlatforms: { en: 'AI Platforms', ja: 'AIプラットフォーム' },
     tagEtlPipelines: { en: 'ETL Pipelines', ja: 'ETLパイプライン' },
@@ -198,16 +200,16 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     projectsHeroTitleLine1: { en: 'From AI Platforms to', ja: 'AIプラットフォームから' },
     projectsHeroTitleLine2: { en: 'Data Pipelines.', ja: 'データパイプラインまで。' },
     projectsHeroDescription: {
-      en: 'Production-grade SaaS applications, distributed data engineering systems, and machine learning solutions. Built with Python, TypeScript, and modern data stack technologies.',
-      ja: '本番運用レベルのSaaSアプリケーション、分散型データエンジニアリングシステム、機械学習ソリューション。Python、TypeScript、モダンなデータスタック技術で構築。'
+      en: 'Product strategy, cross-functional delivery, and technical coordination for software and AI products. From roadmap to release, I help teams deliver reliable, user-focused solutions.',
+      ja: 'プロダクト戦略、クロスファンクショナルなデリバリー、ソフトウェアやAIプロダクトの技術調整。ロードマップからリリースまで、ユーザーに価値ある信頼できるソリューションを提供するためにチームを支援します。'
     },
     statsCompanyFounded: { en: 'Company Founded', ja: '設立した会社' },
     statsProjectsBuilt: { en: 'Projects Built', ja: '構築したプロジェクト' },
     statsSaaSPlatform: { en: 'SaaS Platform', ja: 'SaaSプラットフォーム' },
-    projectsCTAHeading: { en: 'Need a data engineer or full-stack developer?', ja: 'データエンジニアまたはフルスタック開発者をお探しですか？' },
+    projectsCTAHeading: { en: 'Need a Project Manager, Product Owner, or Bridge Engineer (Japanese)?', ja: 'プロジェクトマネージャー、プロダクトオーナー、またはブリッジエンジニア（日本語）をお探しですか？' },
     projectsCTADescription: {
-      en: "Let's build scalable data pipelines, AI-powered applications, or modern web platforms together.",
-      ja: 'スケーラブルなデータパイプライン、AI搭載アプリケーション、モダンなWebプラットフォームを一緒に構築しましょう。'
+      en: "I coordinate teams, define product strategy, and bridge technical and Japanese stakeholders to deliver value.",
+      ja: 'チーム調整、プロダクト戦略の定義、技術と日本のステークホルダーの橋渡しを通じて価値を届けます。'
     },
     projectsCTAButton: { en: "Let's_Talk()", ja: '話しましょう()' },
     visitLiveApp: { en: 'Visit live app', ja: '本番アプリを見る' },
@@ -300,13 +302,35 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     coreCompetenciesHeading: { en: 'Core Competencies', ja: '主な専門領域' },
     statusActive: { en: 'Active', ja: '稼働中' },
 
+    // PM-focused short cards for homepage
+    pmCardTitle1: { en: 'Product Strategy', ja: 'プロダクト戦略' },
+    pmCardDesc1: {
+      en: 'Define roadmaps, prioritize features, and set product vision to align stakeholders.',
+      ja: 'ロードマップの策定、機能の優先順位付け、プロダクトビジョンで関係者を整合させます。'
+    },
+    pmCardTitle2: { en: 'Delivery Management', ja: 'デリバリ管理' },
+    pmCardDesc2: {
+      en: 'Manage releases, timelines, and quality to deliver software predictably.',
+      ja: 'リリース・スケジュール・品質を管理し、確実なソフトウェア提供を実現します。'
+    },
+    pmCardTitle3: { en: 'Stakeholder & Japan Liaison', ja: 'ステークホルダー・日本担当連携' },
+    pmCardDesc3: {
+      en: 'Translate technical requirements between English and Japanese and keep stakeholders aligned.',
+      ja: '技術要件を英日で翻訳し、関係者の整合性を維持します。'
+    },
+    pmCardTitle4: { en: 'Team Leadership', ja: 'チームリーダーシップ' },
+    pmCardDesc4: {
+      en: 'Coordinate small cross-functional teams, mentor engineers, and contribute hands-on when required.',
+      ja: '小規模なクロスファンクショナルチームを調整し、エンジニアのメンターや必要に応じたハンズオンで貢献します。'
+    },
+
     // Contact Page
     contactInitialize: { en: 'Initialize Contact', ja: 'コンタクトを開始' },
     contactHeroTitleLine1: { en: "Let's build something", ja: '一緒に何かを' },
     contactHeroTitleHighlight: { en: 'future-proof.', ja: '将来に強いものに。' },
     contactHeroDescription: {
-      en: 'Data Engineer and Backend Developer at Nexus Tech Global. I specialize in building scalable ETL pipelines, distributed data processing systems, AI-powered platforms, and end-to-end data products using Python, FastAPI, and PostgreSQL. With full-stack experience in React and TypeScript, I create complete solutions from data ingestion to user interfaces. Let\'s discuss how we can transform your data challenges into production-ready solutions.',
-      ja: 'Nexus Tech Globalのデータエンジニア兼バックエンド開発者です。Python、FastAPI、PostgreSQLを用いて、スケーラブルなETLパイプライン、分散データ処理システム、AIプラットフォーム、エンドツーエンドのデータプロダクトを構築しています。ReactとTypeScriptによるフルスタックの経験も活かし、データの取り込みからUIまで一貫したソリューションを提供します。データに関する課題を本番運用レベルのソリューションへどう変えていけるか、ぜひ一緒に話し合いましょう。'
+      en: 'Project Manager and Product Owner experienced in coordinating engineering teams and Japanese stakeholders. I translate business needs into technical requirements, keep delivery on schedule, and ensure alignment across teams. Let\'s discuss how I can support your product or project.',
+      ja: 'プロジェクトマネージャー兼プロダクトオーナーとして、エンジニアチームと日本のステークホルダーの調整に豊富な経験があります。ビジネスの要件を技術要件に翻訳し、納期を守りつつチーム間の連携を確保します。あなたのプロダクトやプロジェクトをどのように支援できるか、ぜひお話しましょう。'
     },
     contactDirectLine: { en: 'Direct Line', ja: 'ダイレクトライン' },
     contactSyncUp: { en: 'Sync Up', ja: '打ち合わせ' },
@@ -320,10 +344,10 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     placeholderName: { en: 'Enter your name', ja: 'お名前を入力してください' },
     placeholderEmail: { en: 'name@domain.com', ja: 'name@domain.com' },
     placeholderMessage: { en: 'Describe your project requirements...', ja: 'プロジェクトの要件をご記入ください…' },
-    sectorOptionEtl: { en: 'ETL Pipeline Development', ja: 'ETLパイプライン開発' },
-    sectorOptionBackend: { en: 'Backend API Development', ja: 'バックエンドAPI開発' },
-    sectorOptionDataPlatform: { en: 'Data Platform Architecture', ja: 'データプラットフォームアーキテクチャ' },
-    sectorOptionConsulting: { en: 'Python/FastAPI Consulting', ja: 'Python/FastAPIコンサルティング' },
+    sectorOptionEtl: { en: 'Project Management', ja: 'プロジェクト管理' },
+    sectorOptionBackend: { en: 'Product Ownership', ja: 'プロダクトオーナーシップ' },
+    sectorOptionDataPlatform: { en: 'Bridge Software Engineer (Japanese)', ja: 'ブリッジエンジニア（日本語）' },
+    sectorOptionConsulting: { en: 'Project Coordination', ja: 'プロジェクトコーディネーション' },
     sectorOptionOther: { en: 'Other', ja: 'その他' },
     buttonSending: { en: 'Sending...', ja: '送信中…' },
     buttonSendTransmission: { en: 'Send Transmission', ja: '送信する' },
@@ -343,8 +367,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'まずは簡単に自己紹介を交わしてから、履歴書をお渡しできればと思っています。'
     },
     cvHeroParagraph2: {
-      en: "Fill out the form below and I'll send you my latest CV. I'm always interested in connecting with fellow developers, data engineers, and tech leaders.",
-      ja: '下のフォームにご入力いただければ、最新の履歴書をお送りします。開発者やデータエンジニア、テックリーダーの皆さまとつながれるのをいつも楽しみにしています。'
+      en: "Fill out the form below and I'll send you my latest CV. I'm always interested in connecting with product managers, project leads, and engineering teams.",
+      ja: '下のフォームにご入力いただければ、最新の履歴書をお送りします。プロダクトマネージャー、プロジェクトリード、エンジニアリングチームの皆さまとつながれるのを楽しみにしています。'
     },
     cvFormTitle: { en: 'Get My CV', ja: '履歴書を受け取る' },
     labelCompanyOptional: { en: 'Company_ (Optional)', ja: '会社名_（任意）' },
