@@ -50,6 +50,14 @@ export const metadata: Metadata = {
       'Bilingual technical leader bridging IT and Japanese Studies. As Associate Founder in AI SaaS, I translate complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English enable me to coordinate global teams and deliver reliable solutions.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
+    images: [
+      {
+        url: 'https://thongtruong.com/profile.jpg',
+        width: 400,
+        height: 533,
+        alt: 'Thong Truong - Technical Product Manager & Bridge Systems Engineer',
+      },
+    ],
     locale: 'en_US',
     type: 'website'
   }
