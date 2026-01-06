@@ -312,11 +312,29 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     tag_Dramatiq: { en: 'Dramatiq', ja: 'Dramatiq' },
     tag_Redis: { en: 'Redis', ja: 'Redis' },
     tag_Docker: { en: 'Docker', ja: 'Docker' },
+    tag_DataPipelines: { en: 'Data Pipelines', ja: 'データパイプライン' },
+    tag_Realtimesystems: { en: 'Real-time Systems', ja: 'リアルタイムシステム' },
+    tag_Kafka: { en: 'Kafka', ja: 'Kafka' },
+    tag_HighScaleArchitecture: { en: 'High-Scale Architecture', ja: '高スケールアーキテクチャ' },
+    tag_FinTech: { en: 'FinTech', ja: 'フィンテック' },
+    tag_DigitalMortgage: { en: 'Digital Mortgage', ja: 'デジタル住宅ローン' },
+    tag_WebDevelopment: { en: 'Web Development', ja: 'ウェブ開発' },
+    tag_RequirementsEngineering: { en: 'Requirements Engineering', ja: '要件工学' },
 
     // Home - Core Competencies
     capabilitiesLabel: { en: 'Capabilities', ja: '得意分野' },
     coreCompetenciesHeading: { en: 'Core Competencies', ja: '主な専門領域' },
     statusActive: { en: 'Active', ja: '稼働中' },
+    
+    // Testimonials Section
+    testimonialsLabel: { en: 'Testimonials', ja: '推薦の声' },
+    testimonialsHeading: { en: 'What People Say', ja: '推薦の声' },
+    testimonialContent: {
+      en: 'Thong is a talented Project Manager with strong organizational and execution skills. While our company is moving in a different strategic and cultural direction, I genuinely believe his strengths will be an excellent fit in the right environment. He brings clarity, accountability, and structure to teams, and any organization looking for a capable Project Manager would benefit from his contributions.',
+      ja: 'Thong is a talented Project Manager with strong organizational and execution skills. While our company is moving in a different strategic and cultural direction, I genuinely believe his strengths will be an excellent fit in the right environment. He brings clarity, accountability, and structure to teams, and any organization looking for a capable Project Manager would benefit from his contributions.'
+    },
+    testimonialAuthorName: { en: 'Bryan Hoang', ja: 'Bryan Hoang' },
+    testimonialAuthorTitle: { en: 'Founder & CEO, Nexus Tech Global', ja: 'Founder & CEO, Nexus Tech Global' },
 
     // PM-focused short cards for homepage
     pmCardTitle1: { en: 'Product Strategy', ja: 'プロダクト戦略' },

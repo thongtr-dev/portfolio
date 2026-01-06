@@ -34,30 +34,6 @@ const projects = [
   },
   {
     id: 3,
-    title: 'PALTech - Data-Intensive Systems',
-    descriptionKey: 'projectPALTechDescription',
-    longDescriptionKey: 'projectPALTechLongDescription',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
-    tags: ['Data Pipelines', 'Real-time Systems', 'Apache Spark', 'Kafka', 'High-Scale Architecture'],
-    version: 'Professional',
-    year: '2024',
-    category: 'Data Engineering',
-    website: 'https://pal.net.vn'
-  },
-  {
-    id: 4,
-    title: 'BeSmartee - FinTech Solutions',
-    descriptionKey: 'projectBeSmarteeDescription',
-    longDescriptionKey: 'projectBeSmarteeLongDescription',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800',
-    tags: ['FinTech', 'Digital Mortgage', 'Web Development', 'Requirements Engineering'],
-    version: 'Professional',
-    year: '2022',
-    category: 'Web Engineering',
-    website: 'https://besmartee.com'
-  },
-  {
-    id: 5,
     title: 'Customer 360 Risk Scoring System',
     descriptionKey: 'projectCustomer360Description',
     longDescriptionKey: 'projectCustomer360LongDescription',
@@ -69,7 +45,7 @@ const projects = [
     github: 'https://github.com/23210287thongtruong/customer360-risk'
   },
   {
-    id: 6,
+    id: 4,
     title: 'Book Recommendation System',
     descriptionKey: 'projectBookRecDescription',
     longDescriptionKey: 'projectBookRecLongDescription',
@@ -81,7 +57,7 @@ const projects = [
     github: 'https://github.com/23210287thongtruong/recommendation-system'
   },
   {
-    id: 7,
+    id: 5,
     title: 'Pet Clinic Management System',
     descriptionKey: 'projectPetClinicDescription',
     longDescriptionKey: 'projectPetClinicLongDescription',
@@ -93,7 +69,7 @@ const projects = [
     github: 'https://github.com/23210287thongtruong/pet-clinic-management-system'
   },
   {
-    id: 8,
+    id: 6,
     title: 'Real-Time Price Tracker (BGU118)',
     descriptionKey: 'projectPriceTrackerDescription',
     longDescriptionKey: 'projectPriceTrackerLongDescription',
