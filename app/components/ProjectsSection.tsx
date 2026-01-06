@@ -31,7 +31,7 @@ export default function ProjectsSection() {
 											<a href="https://sitebotic.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
 												Website →
 											</a>
-											<a href="https://app.sitebotic.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
+											<a href="https://sitebotic.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
 												Dashboard →
 											</a>
 										</div>

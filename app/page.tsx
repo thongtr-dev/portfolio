@@ -216,37 +216,37 @@ export default function HomePage() {
             <div>
               <h4 className="text-xl font-bold mb-4">{t('handsOnTechnicalHeading')}</h4>
               <div className="grid grid-cols-1 gap-6">
-                <Link href="/projects" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
+                <Link href="https://pal.net.vn" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">Professional</div>
                     <Image
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
-                      alt="Customer 360"
+                      src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800"
+                      alt="PALTech Data Systems"
                       width={600}
                       height={400}
                       className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
                     />
                   </div>
                   <div className="p-4">
-                    <h5 className="font-display font-bold text-lg">Customer 360 (University Project)</h5>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectCustomer360Description')}</p>
+                    <h5 className="font-display font-bold text-lg">PALTech - Data-Intensive Systems</h5>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectPALTechDescription')}</p>
                   </div>
                 </Link>
 
-                <Link href="/projects" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
+                <Link href="https://besmartee.com" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">Professional</div>
                     <Image
-                      src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800"
-                      alt="Book Recommendation System"
+                      src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800"
+                      alt="BeSmartee FinTech"
                       width={600}
                       height={400}
                       className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
                     />
                   </div>
                   <div className="p-4">
-                    <h5 className="font-display font-bold text-lg">Book Recommendation System</h5>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectBookRecDescription')}</p>
+                    <h5 className="font-display font-bold text-lg">BeSmartee - FinTech Solutions</h5>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectBeSmarteeDescription')}</p>
                   </div>
                 </Link>
               </div>

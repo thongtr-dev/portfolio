@@ -110,6 +110,17 @@ export default function Footer() {
                   contact@thongtruong.com
                 </a>
               </li>
+              <li className="flex items-start gap-3 group cursor-pointer">
+                <span className="material-icons text-primary text-sm mt-1 group-hover:animate-bounce">
+                  phone
+                </span>
+                <a
+                  href="tel:+84859864079"
+                  className="hover:text-white transition font-mono text-xs"
+                >
+                  (+84) 85 986 4079
+                </a>
+              </li>
               <li className="flex items-start gap-3">
                 <span className="material-icons text-primary text-sm mt-1">
                   place

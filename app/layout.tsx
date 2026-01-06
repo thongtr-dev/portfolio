@@ -25,28 +25,29 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - Project Manager & Product Owner (Bridge Engineer, Japanese)',
+  title: 'Thong Truong - Technical Product Manager | Bridge Systems Engineer (Data & AI)',
   description:
-    'Project Manager and Product Owner experienced in coordinating engineering teams and Japanese stakeholders. I define product roadmaps, manage delivery, translate technical requirements between English and Japanese, and help teams deliver reliable software and AI products.',
+    'Bilingual technical leader bridging IT and Japanese Studies. As Associate Founder in AI SaaS, I translate complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English enable me to coordinate global teams and deliver reliable solutions.',
   keywords: [
-    'Project Manager',
-    'Product Owner',
-    'Bridge Engineer',
-    'Japanese',
-    'Product Strategy',
-    'Project Delivery',
+    'Technical Product Manager',
+    'Bridge Systems Engineer',
+    'Data & AI',
+    'Bilingual Technical Leader',
+    'AI SaaS',
+    'Product Roadmaps',
     'Stakeholder Management',
-    'SaaS',
-    'AI',
-    'Software Development',
+    'Requirements Translation',
+    'Japanese Business Communication',
+    'Data Pipelines',
+    'LLM Integration',
     'Thong Truong'
   ],
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - Project Manager & Product Owner (Bridge Engineer, Japanese)',
+    title: 'Thong Truong - Technical Product Manager | Bridge Systems Engineer (Data & AI)',
     description:
-      'Project Manager and Product Owner experienced in coordinating engineering teams and Japanese stakeholders. I define product roadmaps, manage delivery, translate technical requirements between English and Japanese, and help teams deliver reliable software and AI products.',
+      'Bilingual technical leader bridging IT and Japanese Studies. As Associate Founder in AI SaaS, I translate complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English enable me to coordinate global teams and deliver reliable solutions.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     locale: 'en_US',
@@ -72,29 +73,30 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Thong Truong",
-              "jobTitle": "Project Manager & Product Owner",
-              "description": "Project Manager and Product Owner who coordinates engineering teams, translates technical requirements between English and Japanese, and drives product delivery",
+              "jobTitle": "Technical Product Manager | Bridge Systems Engineer (Data & AI)",
+              "description": "Bilingual technical leader with dual-degree background in IT and Japanese Studies. Associate Founder in AI SaaS, specializing in translating complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English communication skills.",
               "url": "https://thongtruong.com",
               "sameAs": [
                 "https://github.com/thongtr-dev",
                 "https://www.linkedin.com/in/thongtr/"
               ],
                 "knowsAbout": [
-                "Project Management",
-                "Product Strategy",
+                "Technical Product Management",
+                "Bridge Systems Engineering",
+                "Data & AI Solutions",
+                "Bilingual Communication",
+                "AI SaaS Development",
+                "Requirements Translation",
                 "Stakeholder Management",
-                "Roadmapping",
-                "Delivery Management",
-                "Japanese Communication",
-                "Bridge Engineering",
-                "SaaS",
-                "AI",
-                "Software Development"
+                "Product Roadmapping",
+                "Data Pipelines",
+                "LLM Integration",
+                "Japanese Business Practices"
               ],
               "hasOccupation": {
                 "@type": "Occupation",
-                "name": "Project Manager",
-                "occupationalCategory": "Project Management"
+                "name": "Technical Product Manager",
+                "occupationalCategory": "Product Management"
               }
             })
           }}

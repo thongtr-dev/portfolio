@@ -58,20 +58,20 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     contact: { en: './contact', ja: './連絡先' },
 
     // Hero Section (project/product/bridge-focused)
-    founderEngineer: { en: 'Founder & Project Manager', ja: '創業者 & プロジェクトマネージャー' },
+    founderEngineer: { en: 'Technical Product Manager', ja: 'テクニカルプロダクトマネージャー' },
     building: { en: 'Building', ja: '構築' },
-    dataDriven: { en: 'Outcome-Focused', ja: '成果重視' },
-    solutionsAt: { en: 'Solutions at', ja: 'ソリューション' },
+    dataDriven: { en: 'Bridge Systems', ja: 'ブリッジシステム' },
+    solutionsAt: { en: 'for Data & AI', ja: 'データ & AI向け' },
     scale: { en: 'Scale', ja: 'スケール' },
     heroBio: {
-      en: "I'm Thong — Project Manager & Product Owner who bridges engineering and Japanese stakeholders. I coordinate cross-functional teams, define product roadmaps, manage delivery, and translate technical requirements between English and Japanese. With hands-on software experience, I ensure engineering and business align to deliver reliable products.",
-      ja: 'Thongです。プロジェクトマネージャー兼プロダクトオーナーとして、エンジニアリングチームと日本のステークホルダーの橋渡しをします。クロスファンクショナルなチームを調整し、プロダクトロードマップを定義し、成果物の納品管理を行い、英語と日本語の間で技術的要件を翻訳します。ソフトウェア開発の実務経験があるため、技術チームとビジネスの連携を確実にし、信頼できるプロダクトを提供します。'
+      en: "I'm Thong — Bilingual technical leader bridging IT and Japanese Studies. As Associate Founder in AI SaaS, I translate complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English enable me to coordinate global teams and deliver reliable solutions.",
+      ja: 'Thongです。ITと日本研究の二つの学士号を持つ、ハイブリッド型のブリッジSE / テクニカルプロダクトマネージャーです。スタートアップの共同創業者として、AI SaaS製品の「0から1」の立ち上げを経験しました。ビジネスレベルの日本語とプロフェッショナルな英語を駆使し、ビジネス側の抽象的な要望を正確な技術仕様に翻訳し、開発チームを牽引することを得意としています。'
     },
     viewProjects: { en: 'View_Projects', ja: 'プロジェクトを見る' },
     downloadCV: { en: 'Download CV', ja: '履歴書ダウンロード' },
-    dataEngineering: { en: 'Project Management', ja: 'プロジェクト管理' },
-    aiMlIntegration: { en: 'Product Ownership', ja: 'プロダクトオーナーシップ' },
-    fullStack: { en: 'Bridge Engineer (Japanese)', ja: 'ブリッジエンジニア（日本語）' },
+    dataEngineering: { en: 'Bridge & Delivery', ja: 'ブリッジ & デリバリー' },
+    aiMlIntegration: { en: 'Product Management', ja: 'プロダクトマネジメント' },
+    fullStack: { en: 'Data & AI Systems', ja: 'データ & AIシステム' },
 
     // About Page
     beforeDownloadCV: { en: 'Before You Download My CV', ja: '履歴書をダウンロードする前に' },
@@ -233,6 +233,22 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     projectSiteboticLongDescription: {
       en: 'Dev Lead for SiteBotic at Nexus Tech Global. Built from scratch by our dev team - a production SaaS platform that automatically crawls websites, trains AI chatbots on content, and deploys with one-click embed. Features RAG pipeline with pgvector, async processing with Dramatiq + Redis, customizable UI, analytics dashboard, and microservices architecture.',
       ja: 'Nexus Tech GlobalにてSiteBoticの開発リードを担当。ウェブサイトを自動クロールし、コンテンツでAIチャットボットを学習させ、ワンクリックで埋め込み配信できる本番運用SaaSプラットフォームをゼロから構築。pgvectorを用いたRAGパイプライン、Dramatiq + Redisによる非同期処理、カスタマイズ可能なUI、分析ダッシュボード、マイクロサービスアーキテクチャを備える。'
+    },
+    projectPALTechDescription: {
+      en: 'Software Engineer specializing in data-intensive systems, bridging frontend and data platform teams for high-traffic applications.',
+      ja: '大規模データシステムを専門とするソフトウェアエンジニア。フロントエンドとデータプラットフォームチームの橋渡しを担当し、高トラフィックアプリケーションの開発を支援。'
+    },
+    projectPALTechLongDescription: {
+      en: 'Software Engineer at PALTech focusing on data-intensive systems. Optimized real-time data delivery for high-concurrency systems by bridging platform engineers and business logic. Contributed to sprint efficiency by proactively identifying technical dependencies and infrastructure constraints early in planning phases.',
+      ja: 'PALTechにて大規模データシステムを担当するソフトウェアエンジニア。高トラフィック・高リアルタイム性が求められるシステムにおいて、プラットフォームエンジニアとビジネスロジックの橋渡しを担当。スプリントプランニングにて技術的依存関係やインフラ制約を事前に特定し、開発遅延リスクを最小化。'
+    },
+    projectBeSmarteeDescription: {
+      en: 'Web Engineer translating complex FinTech requirements into technical specifications for international development teams.',
+      ja: '複雑なFinTech要件を技術仕様に翻訳し、国際開発チーム向けに明確化するウェブエンジニア。'
+    },
+    projectBeSmarteeLongDescription: {
+      en: 'Web Engineer at BeSmartee specializing in FinTech solutions. Translated complex Digital Mortgage logic into clean, manageable technical requirements for international delivery teams. Focused on requirement elicitation and clear communication between business stakeholders and engineering teams.',
+      ja: 'BeSmarteeにてFinTechソリューションを専門とするウェブエンジニア。複雑な住宅ローン業務を理解し、国際的な開発チームに向けて仕様の明確化を実施。ビジネスステークホルダーとエンジニアリングチーム間の要件定義と明確なコミュニケーションに注力。'
     },
     projectCustomer360Description: {
       en: 'End-to-end data engineering solution building Customer 360 views and risk analytics with ETL pipelines.',
