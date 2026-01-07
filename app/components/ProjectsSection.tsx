@@ -23,7 +23,7 @@ export default function ProjectsSection() {
 								<div className="space-y-6">
 									<div>
 										<h3 className="text-2xl font-bold mb-4">SiteBotic - AI-Powered Chatbot Platform</h3>
-										<p className="text-sm text-purple-400 mb-2 italic">Founder & Product Manager | Production SaaS Platform</p>
+										<p className="text-sm text-purple-400 mb-2 italic">Founder & Project Manager | Production SaaS Platform</p>
 										<p className="text-gray-400">
 											Product-led SaaS platform delivered to enterprise customers. Led product strategy, coordinated engineering and UX, and managed releases for a no-code AI chatbot platform.
 										</p>

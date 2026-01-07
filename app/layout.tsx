@@ -25,29 +25,30 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - Technical Product Manager | Bridge Systems Engineer (Data & AI)',
+  title: 'Thong Truong - Project Manager | Agile Delivery & Cross-functional Coordination',
   description:
-    'Bilingual technical leader bridging IT and Japanese Studies. As Associate Founder in AI SaaS, I translate complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English enable me to coordinate global teams and deliver reliable solutions.',
+    'Project Manager and Associate Founder with hands-on experience leading early-stage SaaS products from MVP to first customer. Proven ability to manage cross-functional teams, define goals and scope, conduct cost-benefit analysis, and deliver features iteratively using Agile frameworks. Bilingual (Japanese/English) technical leader with dual degrees in IT and Japanese Studies.',
+
   keywords: [
-    'Technical Product Manager',
-    'Bridge Systems Engineer',
-    'Data & AI',
-    'Bilingual Technical Leader',
-    'AI SaaS',
-    'Product Roadmaps',
+    'Project Manager',
+    'Agile Project Management',
+    'Cross-functional Team Leadership',
     'Stakeholder Management',
-    'Requirements Translation',
+    'Bilingual Project Manager',
+    'AI SaaS',
+    'Scrum',
+    'Iterative Delivery',
     'Japanese Business Communication',
-    'Data Pipelines',
-    'LLM Integration',
+    'Cost-Benefit Analysis',
+    'MVP to Market',
     'Thong Truong'
   ],
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - Technical Product Manager | Bridge Systems Engineer (Data & AI)',
+    title: 'Thong Truong - Project Manager | Agile Delivery & Cross-functional Coordination',
     description:
-      'Bilingual technical leader bridging IT and Japanese Studies. As Associate Founder in AI SaaS, I translate complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English enable me to coordinate global teams and deliver reliable solutions.',
+      'Project Manager and Associate Founder with hands-on experience leading early-stage SaaS products from MVP to first customer. Proven ability to manage cross-functional teams, define goals and scope, conduct cost-benefit analysis, and deliver features iteratively using Agile frameworks. Bilingual (Japanese/English) technical leader with dual degrees in IT and Japanese Studies.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     images: [
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
         url: 'https://thongtruong.com/profile.jpg',
         width: 400,
         height: 533,
-        alt: 'Thong Truong - Technical Product Manager & Bridge Systems Engineer',
+        alt: 'Thong Truong - Project Manager',
       },
     ],
     locale: 'en_US',
@@ -81,30 +82,30 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Thong Truong",
-              "jobTitle": "Technical Product Manager | Bridge Systems Engineer (Data & AI)",
-              "description": "Bilingual technical leader with dual-degree background in IT and Japanese Studies. Associate Founder in AI SaaS, specializing in translating complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English communication skills.",
+              "jobTitle": "Project Manager | Agile Delivery & Cross-functional Coordination",
+              "description": "Project Manager and Associate Founder with hands-on experience leading early-stage SaaS products from MVP to first customer. Proven ability to manage cross-functional teams, define goals and scope, conduct cost-benefit analysis, and deliver features iteratively using Agile frameworks. Bilingual (Japanese/English) with dual degrees in IT and Japanese Studies.",
               "url": "https://thongtruong.com",
               "sameAs": [
                 "https://github.com/thongtr-dev",
                 "https://www.linkedin.com/in/thongtr/"
               ],
                 "knowsAbout": [
-                "Technical Product Management",
-                "Bridge Systems Engineering",
-                "Data & AI Solutions",
+                "Project Management",
+                "Agile & Scrum Methodologies",
+                "Cross-functional Team Leadership",
                 "Bilingual Communication",
-                "AI SaaS Development",
-                "Requirements Translation",
+                "AI SaaS Delivery",
                 "Stakeholder Management",
-                "Product Roadmapping",
-                "Data Pipelines",
-                "LLM Integration",
+                "Cost-Benefit Analysis",
+                "Sprint Planning",
+                "Iterative Delivery",
+                "MVP Development",
                 "Japanese Business Practices"
               ],
               "hasOccupation": {
                 "@type": "Occupation",
-                "name": "Technical Product Manager",
-                "occupationalCategory": "Product Management"
+                "name": "Project Manager",
+                "occupationalCategory": "Project Management"
               }
             })
           }}

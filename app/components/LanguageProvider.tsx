@@ -58,14 +58,14 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     contact: { en: './contact', ja: './連絡先' },
 
     // Hero Section (project/product/bridge-focused)
-    founderEngineer: { en: 'Technical Product Manager', ja: 'テクニカルプロダクトマネージャー' },
+    founderEngineer: { en: 'Project Manager', ja: 'プロジェクトマネージャー' },
     building: { en: 'Building', ja: '構築' },
     dataDriven: { en: 'Bridge Systems', ja: 'ブリッジシステム' },
     solutionsAt: { en: 'for Data & AI', ja: 'データ & AI向け' },
     scale: { en: 'Scale', ja: 'スケール' },
     heroBio: {
-      en: "I'm Thong — Bilingual technical leader bridging IT and Japanese Studies. As Associate Founder in AI SaaS, I translate complex data/AI requirements into high-value product roadmaps. Business-level Japanese and professional English enable me to coordinate global teams and deliver reliable solutions.",
-      ja: 'Thongです。ITと日本研究の二つの学士号を持つ、ハイブリッド型のブリッジSE / テクニカルプロダクトマネージャーです。スタートアップの共同創業者として、AI SaaS製品の「0から1」の立ち上げを経験しました。ビジネスレベルの日本語とプロフェッショナルな英語を駆使し、ビジネス側の抽象的な要望を正確な技術仕様に翻訳し、開発チームを牽引することを得意としています。'
+      en: "Project Manager and Associate Founder with hands-on experience leading early-stage SaaS products from MVP to first customer. Proven ability to manage cross-functional teams, define goals and scope, conduct cost–benefit analysis, and deliver features iteratively using Agile frameworks. Experienced in stakeholder communication, prioritization, and execution in resource-constrained startup environments. Bilingual (Japanese/English) technical leader with dual degrees in IT and Japanese Studies.",
+      ja: 'プロジェクトマネージャー兼共同創業者として、初期段階のSaaS製品をMVPから初顧客獲得まで導いた実務経験を持ちます。クロスファンクショナルチームの管理、目標とスコープの定義、コストベネフィット分析、アジャイルフレームワークを用いた反復的な機能提供に実績があります。リソース制約のあるスタートアップ環境でのステークホルダーコミュニケーション、優先順位付け、実行に精通。ITと日本研究の二つの学士号を持つバイリンガル（日本語/英語）技術リーダー。'
     },
     viewProjects: { en: 'View_Projects', ja: 'プロジェクトを見る' },
     downloadCV: { en: 'Download CV', ja: '履歴書ダウンロード' },
@@ -139,8 +139,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'フリーランスでのWordPress業務が、プロダクトとデリバリーの役割への扉を開きました。実装からチームの調整、要件の明確化、リリースがビジネス目標を満たすことの保証へと役割が変化しました。この実務を通じて、技術的信頼性とプロダクトデリバリーに関する実践的な理解を得ました。'
     },
     professionalGrowthContent2: {
-      en: 'At Nexus Tech Global I served as Associate Founder, Dev Lead, and Product Owner — I wore many hats. I defined the product vision, wrote user stories, prioritized the backlog, implemented key features as dev lead, and coordinated a cross-functional team of four to deliver a production SaaS chatbot platform. I balanced stakeholder needs, technical constraints, and release timelines to ship usable features quickly.',
-      ja: 'Nexus Tech Globalでは、共同創業者であり開発リード兼プロダクトオーナーとして多くの役割を兼務しました。プロダクトのビジョンを定義し、ユーザーストーリーを作成し、バックログの優先順位を決め、開発リードとして主要機能の実装も行い、4人のクロスファンクショナルチームを調整して本番運用のSaaSチャットボットプラットフォームを提供しました。ステークホルダーの要望、技術的制約、リリーススケジュールのバランスを取りながら、迅速に価値ある機能を提供しました。'
+      en: 'At Nexus Tech Global, as Associate Founder and Project Manager, I led SiteBotic from MVP to first customer within 6 months, managing iterative delivery through Agile sprints with a lean, cross-functional team. I managed a small, high-impact team (AI engineer, freelance QA, designer, marketers), balancing scope, priorities, and delivery speed under resource constraints. I secured the company\'s first customer by leveraging our AI-driven custom development to deploy chatbot-enabled production websites. I conducted cost-benefit analyses on system architecture (cloud microservices vs self-hosted monolith), enabling informed stakeholder decisions on scalability and cost. I defined a lean hiring strategy, deliberately avoiding over-hiring while maintaining delivery effectiveness and cost efficiency. I applied structured project management frameworks (initiation, goal-setting, scope, execution, closure) to guide feature delivery, and delivered a sentiment analysis feature that detects negative user conversations and alerts chatbot owners, improving customer experience monitoring.',
+      ja: 'Nexus Tech Globalでは、共同創業者兼プロジェクトマネージャーとして、6ヶ月以内にSiteBoticをMVPから初顧客獲得まで導き、リーンなクロスファンクショナルチームとともにアジャイルスプリントを通じて反復的デリバリーを管理しました。小規模で影響力の高いチーム（AIエンジニア、フリーランスQA、デザイナー、マーケター）を管理し、リソース制約下でスコープ、優先順位、デリバリースピードのバランスを調整。AI駆動カスタム開発を活用してチャットボット対応の本番ウェブサイトを展開し、会社初の顧客を獲得しました。システムアーキテクチャ（クラウドマイクロサービス vs セルフホストモノリス）のコストベネフィット分析を実施し、スケーラビリティとコストに関する情報に基づいたステークホルダーの意思決定を可能に。リーンな採用戦略を定義し、デリバリー効果とコスト効率を維持しながら過剰採用を意図的に回避。構造化されたプロジェクト管理フレームワーク（開始、目標設定、スコープ、実行、終了）を適用して機能デリバリーをガイドし、ネガティブなユーザー会話を検出してチャットボット所有者にアラートを送る感情分析機能を提供し、顧客体験モニタリングを改善しました。'
     },
     professionalGrowthContent3: {
       en: 'My interest in moving into the Product Management space comes primarily from my experience building the startup SiteBotic. That was the first time I managed not only technical implementation, but also task planning, team coordination, and stakeholder communication—balancing trade-offs and delivering product versions iteratively until reaching a stable release. This process genuinely excited me in a way I hadn\'t experienced before, which is why I want to further pursue the PM path. These experiences taught me how to make pragmatic trade-offs, communicate clearly with both engineers and business stakeholders, and use data to validate product decisions. My background in humanities and technology helps me bridge cultural and technical gaps when working with international teams.',
@@ -182,8 +182,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     viewAllProjects: { en: 'view_all_projects()', ja: 'view_all_projects()' },
     productionBadge: { en: 'Production', ja: '本番環境' },
     nexusSelectedDescription: {
-      en: 'Founder & Product Manager - Leading product strategy, stakeholder communication, and delivery for AI-driven SaaS solutions.',
-      ja: '創業者兼プロダクトマネージャーとして、AI搭載SaaSソリューションのプロダクト戦略、ステークホルダーコミュニケーション、デリバリーを主導。'
+      en: 'Founder & Project Manager - Leading project delivery, stakeholder communication, and cross-functional coordination for AI-driven SaaS solutions.',
+      ja: '創業者兼プロジェクトマネージャーとして、AI搭載SaaSソリューションのプロジェクトデリバリー、ステークホルダーコミュニケーション、クロスファンクショナル調整を主導。'
     },
     siteboticSelectedDescription: {
       en: 'Associate Founder & Product Owner — led product development and delivery for SiteBotic, a no-code AI chatbot SaaS.',
@@ -337,25 +337,25 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     testimonialAuthorTitle: { en: 'Founder & CEO, Nexus Tech Global', ja: 'Founder & CEO, Nexus Tech Global' },
 
     // PM-focused short cards for homepage
-    pmCardTitle1: { en: 'Product Strategy', ja: 'プロダクト戦略' },
+    pmCardTitle1: { en: 'Project & Delivery Management', ja: 'プロジェクト＆デリバリ管理' },
     pmCardDesc1: {
-      en: 'Define roadmaps, prioritize features, and set product vision to align stakeholders.',
-      ja: 'ロードマップの策定、機能の優先順位付け、プロダクトビジョンで関係者を整合させます。'
+      en: 'Project initiation, goal & scope definition, backlog prioritization, sprint planning, Agile execution, release management.',
+      ja: 'プロジェクト開始、目標とスコープの定義、バックログの優先順位付け、スプリント計画、アジャイル実行、リリース管理。'
     },
-    pmCardTitle2: { en: 'Delivery Management', ja: 'デリバリ管理' },
+    pmCardTitle2: { en: 'Stakeholder Management', ja: 'ステークホルダー管理' },
     pmCardDesc2: {
-      en: 'Manage releases, timelines, and quality to deliver software predictably.',
-      ja: 'リリース・スケジュール・品質を管理し、確実なソフトウェア提供を実現します。'
+      en: 'Trade-off communication, cost-benefit analysis, expectation alignment across business and technical teams.',
+      ja: 'トレードオフのコミュニケーション、コストベネフィット分析、ビジネスと技術チーム間の期待値調整。'
     },
-    pmCardTitle3: { en: 'Stakeholder & Japan Liaison', ja: 'ステークホルダー・日本担当連携' },
+    pmCardTitle3: { en: 'Team Leadership', ja: 'チームリーダーシップ' },
     pmCardDesc3: {
-      en: 'Translate technical requirements between English and Japanese and keep stakeholders aligned.',
-      ja: '技術要件を英日で翻訳し、関係者の整合性を維持します。'
+      en: 'Cross-functional coordination (engineering, QA, design, marketing), lean team execution under resource constraints.',
+      ja: 'クロスファンクショナルな調整（エンジニアリング、QA、デザイン、マーケティング）、リソース制約下でのリーンチーム実行。'
     },
-    pmCardTitle4: { en: 'Team Leadership', ja: 'チームリーダーシップ' },
+    pmCardTitle4: { en: 'Product Execution & Agile', ja: 'プロダクト実行＆アジャイル' },
     pmCardDesc4: {
-      en: 'Coordinate small cross-functional teams, mentor engineers, and contribute hands-on when required.',
-      ja: '小規模なクロスファンクショナルチームを調整し、エンジニアのメンターや必要に応じたハンズオンで貢献します。'
+      en: 'MVP definition, iterative delivery, user feedback incorporation, Scrum ceremonies, incremental delivery, retrospectives.',
+      ja: 'MVP定義、反復的デリバリー、ユーザーフィードバックの取り込み、スクラム儀式、段階的デリバリー、レトロスペクティブ。'
     },
 
     // Contact Page
@@ -401,8 +401,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'まずは簡単に自己紹介を交わしてから、履歴書をお渡しできればと思っています。'
     },
     cvHeroParagraph2: {
-      en: "Fill out the form below and I'll send you my latest CV. I'm always interested in connecting with product managers, project leads, and engineering teams.",
-      ja: '下のフォームにご入力いただければ、最新の履歴書をお送りします。プロダクトマネージャー、プロジェクトリード、エンジニアリングチームの皆さまとつながれるのを楽しみにしています。'
+      en: "Fill out the form below and I'll send you my latest CV. I'm always interested in connecting with project managers, engineering teams, and technical leaders.",
+      ja: '下のフォームにご入力いただければ、最新の履歴書をお送りします。プロジェクトマネージャー、エンジニアリングチーム、技術リーダーの皆さまとつながれるのを楽しみにしています。'
     },
     cvFormTitle: { en: 'Get My CV', ja: '履歴書を受け取る' },
     labelCompanyOptional: { en: 'Company_ (Optional)', ja: '会社名_（任意）' },
