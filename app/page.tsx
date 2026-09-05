@@ -41,7 +41,7 @@ export default function HomePage() {
               <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 max-w-2xl shadow-none">
                 <p className="font-mono text-sm text-zinc-500 dark:text-zinc-400 mb-2 uppercase tracking-widest">{/* SYSTEM.LOG_BIO_LOADED */}</p>
                 <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
-                  {"Software engineer building production AI systems—combining foundational machine learning with scalable backend architecture and enterprise cloud integration."}
+                  {"Software engineer building production AI systems - combining foundational machine learning with scalable backend architecture and enterprise cloud integration."}
                 </p>
               </div>
               

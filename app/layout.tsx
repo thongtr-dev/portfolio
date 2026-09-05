@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Thong Truong | AI Engineer',
   description:
-    'Software engineer building production AI systems—combining foundational machine learning with scalable backend architecture and enterprise cloud integration.',
+    'Software engineer building production AI systems - combining foundational machine learning with scalable backend architecture and enterprise cloud integration.',
 
   keywords: [
     'AI Engineer',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Thong Truong | AI Engineer',
     description:
-      'Software engineer building production AI systems—combining foundational machine learning with scalable backend architecture and enterprise cloud integration.',
+      'Software engineer building production AI systems - combining foundational machine learning with scalable backend architecture and enterprise cloud integration.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     images: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Thong Truong | AI Engineer',
     description:
-      'Software engineer building production AI systems—combining foundational machine learning with scalable backend architecture and enterprise cloud integration.',
+      'Software engineer building production AI systems - combining foundational machine learning with scalable backend architecture and enterprise cloud integration.',
     images: ['https://thongtruong.com/profile.jpg'],
   }
 };
@@ -86,7 +86,7 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Thong Truong",
               "jobTitle": "AI Engineer",
-              "description": "Software engineer building production AI systems—combining foundational machine learning with scalable backend architecture and enterprise cloud integration.",
+              "description": "Software engineer building production AI systems - combining foundational machine learning with scalable backend architecture and enterprise cloud integration.",
               "url": "https://thongtruong.com",
               "sameAs": [
                 "https://github.com/AIVIETNAM-AIO-TruongHoangThong",

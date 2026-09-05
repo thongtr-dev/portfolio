@@ -147,11 +147,11 @@
           </blockquote>
 
           <p>
-            For a long time, my knee-jerk instinct was: if you want true AI, you have to go down to the metal. You have to be the person working on the raw physics and math of code—implementing Transformer attention blocks from scratch in <strong>PyTorch</strong>, writing custom <strong>CUDA / Triton</strong> kernels for matrix multiplication, optimizing GPU memory consumption, and running post-training alignment through <strong>RLHF, DPO, or GRPO</strong>.
+            For a long time, my knee-jerk instinct was: if you want true AI, you have to go down to the metal. You have to be the person working on the raw physics and math of code - implementing Transformer attention blocks from scratch in <strong>PyTorch</strong>, writing custom <strong>CUDA / Triton</strong> kernels for matrix multiplication, optimizing GPU memory consumption, and running post-training alignment through <strong>RLHF, DPO, or GRPO</strong>.
           </p>
 
           <p>
-            To me, that felt like where the true AI lived. Anything higher up the stack felt like superficial wrapper scripting around someone else&apos;s model—writing 500 lines of glue code just to parse a 5-word response, or spending half an afternoon engineering a prompt that politely begs the LLM not to make up fake SQL tables.
+            To me, that felt like where the true AI lived. Anything higher up the stack felt like superficial wrapper scripting around someone else&apos;s model - writing 500 lines of glue code just to parse a 5-word response, or spending half an afternoon engineering a prompt that politely begs the LLM not to make up fake SQL tables.
           </p>
         </section>
 
@@ -189,7 +189,7 @@
           </p>
 
           <p>
-            Calling an API isn&apos;t the hard part—anyone can <code class="font-mono text-sm px-1.5 py-0.5 bg-zinc-800">pip install</code> an SDK and burn through $50 in API credits in five minutes. The hard part is building software that produces predictable, type-safe telemetry out of an inherently stochastic model that might randomly decide to return JSON wrapped in markdown code blocks.
+            Calling an API isn&apos;t the hard part - anyone can <code class="font-mono text-sm px-1.5 py-0.5 bg-zinc-800">pip install</code> an SDK and burn through $50 in API credits in five minutes. The hard part is building software that produces predictable, type-safe telemetry out of an inherently stochastic model that might randomly decide to return JSON wrapped in markdown code blocks.
           </p>
 
           <!-- Side-by-side comparative box -->
@@ -282,7 +282,7 @@ output = torch.matmul(attn_probs, v)</pre>
               Traditional web applications execute static decision trees: an incoming HTTP request hits an endpoint, runs nested <code class="font-mono text-sm px-1.5 py-0.5 bg-zinc-800">if/else</code> checks, and calls hard-coded API chains.
             </p>
             <p class="text-base text-zinc-300">
-              Agentic architectures shift decision-making into semantic space. Instead of static branches, agents ingest context, evaluate intent, autonomously select tools from a registry, assess their own intermediate execution results, and attempt self-correction when an API throws an error. That isn&apos;t simple scripting—it&apos;s dynamic control flow.
+              Agentic architectures shift decision-making into semantic space. Instead of static branches, agents ingest context, evaluate intent, autonomously select tools from a registry, assess their own intermediate execution results, and attempt self-correction when an API throws an error. That isn&apos;t simple scripting - it&apos;s dynamic control flow.
             </p>
           </div>
 
@@ -298,7 +298,7 @@ output = torch.matmul(attn_probs, v)</pre>
               There&apos;s a popular myth that AI agents will somehow make relational SQL databases or vector indices obsolete. But why would they? You don&apos;t use an LLM to replace fast B-tree index lookups or ACID-compliant joins.
             </p>
             <p class="text-base text-zinc-300">
-              We use agents as an <strong>intelligent controller</strong> positioned above relational and vector databases to handle human chaos. Human intent is messy and ambiguous; relational databases demand crisp SQL. The agent acts as a cognitive buffer—interpreting messy Text-to-SQL intent, resolving entity ambiguities, enriching dirty text, and reasoning through business edge cases before committing state to storage.
+              We use agents as an <strong>intelligent controller</strong> positioned above relational and vector databases to handle human chaos. Human intent is messy and ambiguous; relational databases demand crisp SQL. The agent acts as a cognitive buffer - interpreting messy Text-to-SQL intent, resolving entity ambiguities, enriching dirty text, and reasoning through business edge cases before committing state to storage.
             </p>
           </div>
 
@@ -311,7 +311,7 @@ output = torch.matmul(attn_probs, v)</pre>
               Lessons from the <a href="https://aichallenge.hochiminhcity.gov.vn/" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors underline">Ho Chi Minh City AI Challenge (HCMC AIC)</a>
             </h3>
             <p class="text-base text-zinc-300">
-              I&apos;m seeing this firsthand right now—as of writing this post, I&apos;m actively preparing and competing in the <a href="https://aichallenge.hochiminhcity.gov.vn/" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:opacity-80 transition-opacity font-semibold">Ho Chi Minh City AI Challenge (HCMC AIC)</a>.
+              I&apos;m seeing this firsthand right now - as of writing this post, I&apos;m actively preparing and competing in the <a href="https://aichallenge.hochiminhcity.gov.vn/" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:opacity-80 transition-opacity font-semibold">Ho Chi Minh City AI Challenge (HCMC AIC)</a>.
             </p>
             <p class="text-base text-zinc-300">
               In these high-pressure settings, winning is never about training a 70-billion parameter model from scratch in a limited time frame. Victory comes down to system orchestration: multi-agent query expansion pipelines, indexing visual vectors across temporal keyframes, routing queries dynamically based on modality confidence, and executing sub-second hybrid searches across vector indices. System design beats brute-force training every single time.
@@ -333,11 +333,11 @@ output = torch.matmul(attn_probs, v)</pre>
           </p>
 
           <p>
-            Through this reflection, I realized I don&apos;t have to choose between being &quot;the low-level model trainer&quot; or &quot;the high-level systems architect.&quot; They aren&apos;t opposing paths—they are complementary layers of the same stack.
+            Through this reflection, I realized I don&apos;t have to choose between being &quot;the low-level model trainer&quot; or &quot;the high-level systems architect.&quot; They aren&apos;t opposing paths - they are complementary layers of the same stack.
           </p>
 
           <p>
-            That&apos;s why I&apos;ve been systematically grounding myself in traditional AI fundamentals—working through the mathematics, linear algebra, and classical deep learning architectures in the <a href="https://aivietnam.edu.vn/" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:opacity-80 transition-opacity">AI Viet Nam (AIO)</a> program—while keeping my primary identity and focus as a production software engineer.
+            That&apos;s why I&apos;ve been systematically grounding myself in traditional AI fundamentals - working through the mathematics, linear algebra, and classical deep learning architectures in the <a href="https://aivietnam.edu.vn//" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:opacity-80 transition-opacity">AI Viet Nam (AIO)</a> program - while keeping my primary identity and focus as a production software engineer.
           </p>
 
           <p>
